@@ -1,8 +1,8 @@
 {
   "version": 2,
   "kind": "original-practice",
-  "title": "會計學期末：100 題原創練習題庫（依期中考題型自編，非原卷轉錄）",
-  "sourceNote": "參考使用者上傳的期中考題目與答案截圖之主題；題目均自行編寫。",
+  "title": "會計學模擬考：100 題原創練習題庫",
+  "sourceNote": "本題庫為參考使用者上傳之期中考題型／科目主題自行生成的100題新題，非教師原卷轉錄；英文內容為對照練習文字，非原卷原文。",
   "questions": [
     {
       "id": "acct-2026-001",
@@ -1658,6 +1658,1578 @@
       "answer": "a",
       "explanation": "收入合計＝NT$75,000＋NT$25,000＝NT$100,000；淨利＝NT$100,000－NT$63,800＝NT$36,200。",
       "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
+    },
+    {
+      "id": "acct-2026-061",
+      "type": "multiple",
+      "topic": "資產與負債分類",
+      "title": "下列哪些科目一般屬於資產？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "現金"
+        },
+        {
+          "id": "b",
+          "text": "應付帳款"
+        },
+        {
+          "id": "c",
+          "text": "應收帳款"
+        },
+        {
+          "id": "d",
+          "text": "辦公設備"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": "現金、應收帳款與辦公設備是資產，應付帳款是負債。",
+      "originalEnglish": "Which of the following are assets?"
+    },
+    {
+      "id": "acct-2026-062",
+      "type": "multiple",
+      "topic": "資產與負債分類",
+      "title": "下列哪些科目一般屬於負債？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "應付薪資"
+        },
+        {
+          "id": "b",
+          "text": "預收服務收入"
+        },
+        {
+          "id": "c",
+          "text": "預付租金"
+        },
+        {
+          "id": "d",
+          "text": "應付帳款"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "尚未支付的薪資、未履約的預收款與應付帳款均屬負債。",
+      "originalEnglish": "Which of the following represent liabilities?"
+    },
+    {
+      "id": "acct-2026-063",
+      "type": "multiple",
+      "topic": "財務報表",
+      "title": "損益表通常包含哪些項目？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "租金收入"
+        },
+        {
+          "id": "b",
+          "text": "薪資費用"
+        },
+        {
+          "id": "c",
+          "text": "設備成本"
+        },
+        {
+          "id": "d",
+          "text": "折舊費用"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "損益表反映收入與費用；設備成本通常列在資產負債表。",
+      "originalEnglish": "Which items are generally reported in an income statement?"
+    },
+    {
+      "id": "acct-2026-064",
+      "type": "multiple",
+      "topic": "借貸法則",
+      "title": "下列哪些科目增加時通常借記？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "現金"
+        },
+        {
+          "id": "b",
+          "text": "設備"
+        },
+        {
+          "id": "c",
+          "text": "服務收入"
+        },
+        {
+          "id": "d",
+          "text": "租金費用"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "資產與費用增加通常記借方；收入增加記貸方。",
+      "originalEnglish": "Which accounts are increased with debit entries?"
+    },
+    {
+      "id": "acct-2026-065",
+      "type": "multiple",
+      "topic": "調整分錄",
+      "title": "期末有哪些情況通常必須編製調整分錄？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "已發生但未入帳的水電費"
+        },
+        {
+          "id": "b",
+          "text": "已耗用但未認列的預付保險"
+        },
+        {
+          "id": "c",
+          "text": "已正確記錄的現金購貨"
+        },
+        {
+          "id": "d",
+          "text": "尚未提列的設備折舊"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "未入帳的應計費用、已耗用預付款和折舊需調整；已正確入帳者不需重複。",
+      "originalEnglish": "Which situations require adjusting entries?"
+    },
+    {
+      "id": "acct-2026-066",
+      "type": "multiple",
+      "topic": "權責發生基礎",
+      "title": "關於權責發生基礎，哪些敘述正確？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "收入在賺得時認列"
+        },
+        {
+          "id": "b",
+          "text": "費用在發生時認列"
+        },
+        {
+          "id": "c",
+          "text": "一定要收到現金才記收入"
+        },
+        {
+          "id": "d",
+          "text": "應計負債需於期末認列"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "權責發生基礎以收入賺得與費用發生的期間為準，不以現金收付時點為唯一依據。",
+      "originalEnglish": "Which statements describe accrual accounting?"
+    },
+    {
+      "id": "acct-2026-067",
+      "type": "multiple",
+      "topic": "會計恆等式",
+      "title": "哪些交易會使資產與負債總額同時增加？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "向銀行借入現金"
+        },
+        {
+          "id": "b",
+          "text": "賒購設備"
+        },
+        {
+          "id": "c",
+          "text": "發行普通股收現"
+        },
+        {
+          "id": "d",
+          "text": "賒購辦公用品"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "借款與賒購均增加資產及負債，發行股票則使資產與權益增加。",
+      "originalEnglish": "Which transactions increase both total assets and total liabilities?"
+    },
+    {
+      "id": "acct-2026-068",
+      "type": "multiple",
+      "topic": "交易與分錄",
+      "title": "下列哪些分錄的方向正確？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "現金償還應付帳款：借應付帳款、貸現金"
+        },
+        {
+          "id": "b",
+          "text": "收到服務預付款：借現金、貸預收收入"
+        },
+        {
+          "id": "c",
+          "text": "設備折舊：借累計折舊、貸折舊費用"
+        },
+        {
+          "id": "d",
+          "text": "賒帳提供服務：借應收帳款、貸服務收入"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "折舊應借折舊費用並貸累計折舊，其餘列示的交易方向正確。",
+      "originalEnglish": "Which journal entries are correctly stated?"
+    },
+    {
+      "id": "acct-2026-069",
+      "type": "multiple",
+      "topic": "試算表",
+      "title": "下列哪些錯誤可能不會使試算表借貸失衡？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "整筆交易完全漏記"
+        },
+        {
+          "id": "b",
+          "text": "借貸雙方同額記入錯誤科目"
+        },
+        {
+          "id": "c",
+          "text": "將單邊金額少記 2,000"
+        },
+        {
+          "id": "d",
+          "text": "整筆交易重複記錄一次"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "整筆漏記、同額錯用科目、整筆重複記錄可能仍平衡；單邊少記通常會失衡。",
+      "originalEnglish": "Which errors may leave a trial balance balanced?"
+    },
+    {
+      "id": "acct-2026-070",
+      "type": "multiple",
+      "topic": "收入認列",
+      "title": "以下哪些情況可能在尚未收現時認列收入？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "已完成顧問服務且向客戶請款"
+        },
+        {
+          "id": "b",
+          "text": "提供分期收款的服務，服務已完成"
+        },
+        {
+          "id": "c",
+          "text": "僅收到未履行服務的預收款"
+        },
+        {
+          "id": "d",
+          "text": "期末已賺得但尚未收到租金"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "賺得收入時即可認列；尚未履約的預收款是負債。",
+      "originalEnglish": "When may revenue be recognized before cash is received?"
+    },
+    {
+      "id": "acct-2026-071",
+      "type": "multiple",
+      "topic": "折舊",
+      "title": "關於直線法折舊，哪些敘述正確？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "每期折舊通常固定"
+        },
+        {
+          "id": "b",
+          "text": "估計殘值影響可折舊金額"
+        },
+        {
+          "id": "c",
+          "text": "提列折舊等於當期付出現金"
+        },
+        {
+          "id": "d",
+          "text": "累計折舊會使設備帳面金額下降"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "直線法依成本扣除殘值後分攤，折舊費用為非現金項目，累計折舊抵減帳面金額。",
+      "originalEnglish": "Which statements about straight-line depreciation are correct?"
+    },
+    {
+      "id": "acct-2026-072",
+      "type": "multiple",
+      "topic": "財務報表",
+      "title": "下列哪些資訊通常屬於資產負債表的範圍？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "現金餘額"
+        },
+        {
+          "id": "b",
+          "text": "應付帳款餘額"
+        },
+        {
+          "id": "c",
+          "text": "當期服務收入總額"
+        },
+        {
+          "id": "d",
+          "text": "業主權益餘額"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "財務狀況表列示資產、負債與權益；收入總額是損益資訊。",
+      "originalEnglish": "Which balances belong on a statement of financial position?"
+    },
+    {
+      "id": "acct-2026-073",
+      "type": "multiple",
+      "topic": "結帳",
+      "title": "下列哪些科目一般需要期末結帳？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "服務收入"
+        },
+        {
+          "id": "b",
+          "text": "薪資費用"
+        },
+        {
+          "id": "c",
+          "text": "現金"
+        },
+        {
+          "id": "d",
+          "text": "租金收入"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "收入及費用等暫時性科目需結帳，現金為永久性資產科目。",
+      "originalEnglish": "Which accounts are normally closed at period-end?"
+    },
+    {
+      "id": "acct-2026-074",
+      "type": "multiple",
+      "topic": "費用認列",
+      "title": "下列哪些事項會在本期形成費用？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "本期已耗用用品"
+        },
+        {
+          "id": "b",
+          "text": "本期已享受但未支付的水電"
+        },
+        {
+          "id": "c",
+          "text": "預付下年度全部租金且尚未使用"
+        },
+        {
+          "id": "d",
+          "text": "本期機器折舊"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "本期耗用資源及已發生的成本形成費用，尚未到期的預付租金先列資產。",
+      "originalEnglish": "Which transactions result in current-period expenses?"
+    },
+    {
+      "id": "acct-2026-075",
+      "type": "multiple",
+      "topic": "會計循環",
+      "title": "哪些工作通常是在編製已調整後財務報表前完成？",
+      "intro": "本題為複選題，必須選出所有正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "交易記入日記簿"
+        },
+        {
+          "id": "b",
+          "text": "過帳至分類帳"
+        },
+        {
+          "id": "c",
+          "text": "編製期末調整分錄"
+        },
+        {
+          "id": "d",
+          "text": "下一年度的結帳分錄"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "本期交易記錄、過帳及期末調整均在本期已調整報表編製之前；下年度結帳不是此步驟。",
+      "originalEnglish": "Which steps precede adjusted financial statements?"
+    },
+    {
+      "id": "acct-2026-076",
+      "type": "filter",
+      "topic": "資產分類",
+      "title": "請在資料表中篩選所有「流動資產」。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "現金",
+          "category": "可隨時支付"
+        },
+        {
+          "id": "b",
+          "item": "應收帳款",
+          "category": "預計三個月內收回"
+        },
+        {
+          "id": "c",
+          "item": "土地",
+          "category": "長期供營運使用"
+        },
+        {
+          "id": "d",
+          "item": "預付三個月租金",
+          "category": "短期預付費用"
+        },
+        {
+          "id": "e",
+          "item": "專利權",
+          "category": "無形資產"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "現金、短期應收帳款與短期預付費用通常是流動資產。",
+      "originalEnglish": "Select all current assets."
+    },
+    {
+      "id": "acct-2026-077",
+      "type": "filter",
+      "topic": "負債分類",
+      "title": "請篩選出應列為「流動負債」的科目。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "應付帳款",
+          "category": "半年內償還"
+        },
+        {
+          "id": "b",
+          "item": "長期借款",
+          "category": "五年後到期"
+        },
+        {
+          "id": "c",
+          "item": "應付薪資",
+          "category": "下月支付"
+        },
+        {
+          "id": "d",
+          "item": "預收服務收入",
+          "category": "預計三個月內提供服務"
+        },
+        {
+          "id": "e",
+          "item": "普通股股本",
+          "category": "業主權益"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": "短期應付款、應付薪資及短期預收款為流動負債。",
+      "originalEnglish": "Select all current liabilities."
+    },
+    {
+      "id": "acct-2026-078",
+      "type": "filter",
+      "topic": "費用分類",
+      "title": "下列科目中，哪些應屬於費用？",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "薪資費用",
+          "category": "員工本期勞務"
+        },
+        {
+          "id": "b",
+          "item": "折舊費用",
+          "category": "設備成本分攤"
+        },
+        {
+          "id": "c",
+          "item": "應收帳款",
+          "category": "客戶欠款"
+        },
+        {
+          "id": "d",
+          "item": "保險費用",
+          "category": "本期已耗用"
+        },
+        {
+          "id": "e",
+          "item": "租金收入",
+          "category": "賺得之租金"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "薪資費用、折舊費用和保險費用屬損益表費用。",
+      "originalEnglish": "Select all expense accounts."
+    },
+    {
+      "id": "acct-2026-079",
+      "type": "filter",
+      "topic": "結帳科目",
+      "title": "請選出期末通常需要結帳的暫時性科目。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "服務收入",
+          "category": "損益類收入"
+        },
+        {
+          "id": "b",
+          "item": "現金",
+          "category": "永久性資產"
+        },
+        {
+          "id": "c",
+          "item": "租金收入",
+          "category": "損益類收入"
+        },
+        {
+          "id": "d",
+          "item": "薪資費用",
+          "category": "損益類費用"
+        },
+        {
+          "id": "e",
+          "item": "設備",
+          "category": "永久性資產"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": "收入與費用為暫時性科目；現金、設備均為永久性科目。",
+      "originalEnglish": "Select temporary accounts that are closed at year-end."
+    },
+    {
+      "id": "acct-2026-080",
+      "type": "filter",
+      "topic": "期末調整",
+      "title": "請篩選出通常需要作期末調整分錄的事件。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "已發生的水電費尚未入帳",
+          "category": "應計費用"
+        },
+        {
+          "id": "b",
+          "item": "尚未入帳的設備折舊",
+          "category": "成本分攤"
+        },
+        {
+          "id": "c",
+          "item": "本月現金收款已完整入帳",
+          "category": "已正確記錄"
+        },
+        {
+          "id": "d",
+          "item": "預付保險已有一個月到期",
+          "category": "費用實現"
+        },
+        {
+          "id": "e",
+          "item": "已完整入帳的現金購買土地",
+          "category": "已正確記錄"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "應計費用、折舊與已到期的預付費用需調整；已正確入帳的交易不需重複。",
+      "originalEnglish": "Select all situations requiring adjusting entries."
+    },
+    {
+      "id": "acct-2026-081",
+      "type": "filter",
+      "topic": "借貸法則",
+      "title": "請選出「借方」通常為正常餘額的科目。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "現金",
+          "category": "資產"
+        },
+        {
+          "id": "b",
+          "item": "應付帳款",
+          "category": "負債"
+        },
+        {
+          "id": "c",
+          "item": "應收帳款",
+          "category": "資產"
+        },
+        {
+          "id": "d",
+          "item": "租金收入",
+          "category": "收入"
+        },
+        {
+          "id": "e",
+          "item": "設備",
+          "category": "資產"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "資產通常是借方餘額，負債及收入為貸方正常餘額。",
+      "originalEnglish": "Select accounts with normal debit balances."
+    },
+    {
+      "id": "acct-2026-082",
+      "type": "filter",
+      "topic": "損益表",
+      "title": "請篩選出通常出現在「損益表」的項目。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "顧問收入",
+          "category": "本期收入"
+        },
+        {
+          "id": "b",
+          "item": "薪資費用",
+          "category": "本期費用"
+        },
+        {
+          "id": "c",
+          "item": "應付帳款",
+          "category": "尚未清償負債"
+        },
+        {
+          "id": "d",
+          "item": "折舊費用",
+          "category": "本期費用"
+        },
+        {
+          "id": "e",
+          "item": "預付保險",
+          "category": "未到期資產"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "損益表主要呈現收入及費用；應付帳款與預付保險是財務狀況表項目。",
+      "originalEnglish": "Select items belonging on the income statement."
+    },
+    {
+      "id": "acct-2026-083",
+      "type": "filter",
+      "topic": "營業現金流",
+      "title": "對一般服務業而言，哪些屬於營業活動現金流入？",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "收取本期顧問服務費",
+          "category": "日常服務收入"
+        },
+        {
+          "id": "b",
+          "item": "收回先前的應收服務費",
+          "category": "客戶付款"
+        },
+        {
+          "id": "c",
+          "item": "銀行借款收現",
+          "category": "籌資取得"
+        },
+        {
+          "id": "d",
+          "item": "預收明年服務費現金",
+          "category": "營業合約預收"
+        },
+        {
+          "id": "e",
+          "item": "出售機器設備收現",
+          "category": "投資活動處分"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "顧客服務的當期收款、欠款收回與服務預收款通常是營業活動現金流入。",
+      "originalEnglish": "Select operating cash inflows for a service business."
+    },
+    {
+      "id": "acct-2026-084",
+      "type": "filter",
+      "topic": "非現金費用",
+      "title": "請選出本期認列時「不直接造成當期現金流出」的費用。",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "提列設備折舊",
+          "category": "借折舊費用、貸累計折舊"
+        },
+        {
+          "id": "b",
+          "item": "認列本期到期的預付保險",
+          "category": "先前已付現"
+        },
+        {
+          "id": "c",
+          "item": "當場現金支付薪資",
+          "category": "當期現金流出"
+        },
+        {
+          "id": "d",
+          "item": "認列本期應付未付薪資",
+          "category": "本期尚未付款"
+        },
+        {
+          "id": "e",
+          "item": "現金支付當期水電費",
+          "category": "當期現金流出"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "提列折舊、預付保險轉費用及應計未付薪資，在認列當下均不直接付現。",
+      "originalEnglish": "Select expenses recognized without a current cash payment."
+    },
+    {
+      "id": "acct-2026-085",
+      "type": "filter",
+      "topic": "期末負債",
+      "title": "以下期末帳戶，哪些應列為負債？",
+      "intro": "點選所有符合條件的資料列；可多選，全部選對才得分。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "項目"
+        },
+        {
+          "key": "category",
+          "label": "說明"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "應付貨款",
+          "category": "對供應商負有付款義務"
+        },
+        {
+          "id": "b",
+          "item": "應付水電費",
+          "category": "已用未付"
+        },
+        {
+          "id": "c",
+          "item": "預收租金",
+          "category": "尚未經過出租期間"
+        },
+        {
+          "id": "d",
+          "item": "保留盈餘",
+          "category": "權益"
+        },
+        {
+          "id": "e",
+          "item": "應收租金",
+          "category": "尚待收現之資產"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "應付貨款、應計水電費及尚未賺得之預收租金均為負債。",
+      "originalEnglish": "Select all liability accounts at period-end."
+    },
+    {
+      "id": "acct-2026-086",
+      "type": "order",
+      "topic": "會計循環",
+      "title": "請將一筆交易從發生到編製試算表的步驟排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "過帳至分類帳"
+        },
+        {
+          "id": "d",
+          "text": "編製試算表"
+        },
+        {
+          "id": "a",
+          "text": "分析原始憑證"
+        },
+        {
+          "id": "b",
+          "text": "記錄日記簿分錄"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "先分析交易並記入日記簿，再過帳至分類帳，最後編試算表。",
+      "originalEnglish": "Order the steps from transaction analysis to the trial balance."
+    },
+    {
+      "id": "acct-2026-087",
+      "type": "order",
+      "topic": "年度會計流程",
+      "title": "請將會計期末工作依一般先後順序排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "編製已調整試算表"
+        },
+        {
+          "id": "d",
+          "text": "編製財務報表"
+        },
+        {
+          "id": "e",
+          "text": "作結帳分錄"
+        },
+        {
+          "id": "a",
+          "text": "編製未調整試算表"
+        },
+        {
+          "id": "b",
+          "text": "編製調整分錄"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "explanation": "先檢查未調整餘額，再調整與編製已調整試算表，接著財務報表及結帳。",
+      "originalEnglish": "Arrange the standard year-end accounting steps."
+    },
+    {
+      "id": "acct-2026-088",
+      "type": "order",
+      "topic": "交易分析",
+      "title": "請將「賒購設備」交易的會計處理流程排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "借記設備、貸記應付帳款"
+        },
+        {
+          "id": "d",
+          "text": "過帳至設備及應付帳款分類帳"
+        },
+        {
+          "id": "a",
+          "text": "確認購買設備的原始單據"
+        },
+        {
+          "id": "b",
+          "text": "辨識設備增加與應付帳款增加"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "先取得憑證，再分析帳戶影響，記錄分錄，最後過帳。",
+      "originalEnglish": "Arrange the accounting steps for equipment purchased on account."
+    },
+    {
+      "id": "acct-2026-089",
+      "type": "order",
+      "topic": "編製損益表",
+      "title": "請將損益表計算流程排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "將總收入減去總費用"
+        },
+        {
+          "id": "d",
+          "text": "列示本期淨利或淨損"
+        },
+        {
+          "id": "a",
+          "text": "彙總服務收入與其他收入"
+        },
+        {
+          "id": "b",
+          "text": "彙總各項營業費用"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "先取得收入與費用總額，再相減計算淨利，最後在報表列示。",
+      "originalEnglish": "Order the steps of preparing an income statement."
+    },
+    {
+      "id": "acct-2026-090",
+      "type": "order",
+      "topic": "折舊計算",
+      "title": "請依直線法折舊的計算順序排列。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "計算（成本－殘值）÷年限"
+        },
+        {
+          "id": "d",
+          "text": "借記折舊費用、貸記累計折舊"
+        },
+        {
+          "id": "a",
+          "text": "確認設備原始成本"
+        },
+        {
+          "id": "b",
+          "text": "估計殘值與耐用年限"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "直線法先決定成本、殘值和年限，再計算年折舊並記錄分錄。",
+      "originalEnglish": "Order the steps for straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-091",
+      "type": "order",
+      "topic": "預付保險調整",
+      "title": "請將預付保險期末調整的步驟排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "計算本期應列保險費用"
+        },
+        {
+          "id": "d",
+          "text": "借保險費用、貸預付保險"
+        },
+        {
+          "id": "a",
+          "text": "確認保險合約涵蓋期間"
+        },
+        {
+          "id": "b",
+          "text": "計算本期已到期的月份"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "確認期間與耗用月份後計算費用，再編製調整分錄。",
+      "originalEnglish": "Order the steps for adjusting prepaid insurance."
+    },
+    {
+      "id": "acct-2026-092",
+      "type": "order",
+      "topic": "預收收入調整",
+      "title": "請將預收服務費的帳務流程依時間先後排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "期末計算已完成服務比例"
+        },
+        {
+          "id": "d",
+          "text": "借預收收入、貸服務收入"
+        },
+        {
+          "id": "a",
+          "text": "收款但尚未履約時借現金、貸預收收入"
+        },
+        {
+          "id": "b",
+          "text": "於約定日期開始提供服務"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "先收取預收款，提供服務後計算已賺得收入並調整。",
+      "originalEnglish": "Order the accounting steps for unearned service revenue."
+    },
+    {
+      "id": "acct-2026-093",
+      "type": "order",
+      "topic": "應計薪資",
+      "title": "請將應計未付薪資的會計流程排序。",
+      "intro": "可直接拖曳排序；手機可用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "c",
+          "text": "期末借薪資費用、貸應付薪資"
+        },
+        {
+          "id": "d",
+          "text": "日後支付時借應付薪資、貸現金"
+        },
+        {
+          "id": "a",
+          "text": "確認員工已在本期提供勞務"
+        },
+        {
+          "id": "b",
+          "text": "計算尚未支付的薪資"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "確認本期勞務及金額後先認列應計負債，日後付款再沖銷負債。",
+      "originalEnglish": "Order the steps for recording and paying accrued salaries."
+    },
+    {
+      "id": "acct-2026-094",
+      "type": "match",
+      "topic": "科目分類",
+      "title": "請將會計科目配對到正確的要素。",
+      "intro": "請為每一項選擇最符合的分類或說明。",
+      "left": [
+        {
+          "id": "a",
+          "text": "現金"
+        },
+        {
+          "id": "b",
+          "text": "應付帳款"
+        },
+        {
+          "id": "c",
+          "text": "業主資本"
+        },
+        {
+          "id": "d",
+          "text": "服務收入"
+        }
+      ],
+      "right": [
+        {
+          "id": "w",
+          "text": "資產"
+        },
+        {
+          "id": "x",
+          "text": "負債"
+        },
+        {
+          "id": "y",
+          "text": "權益"
+        },
+        {
+          "id": "z",
+          "text": "收入"
+        }
+      ],
+      "answer": {
+        "a": "w",
+        "b": "x",
+        "c": "y",
+        "d": "z"
+      },
+      "explanation": "現金屬資產；應付帳款屬負債；業主資本為權益；服務收入為收入。",
+      "originalEnglish": "Match accounts to accounting elements."
+    },
+    {
+      "id": "acct-2026-095",
+      "type": "match",
+      "topic": "費用與資產",
+      "title": "請將科目配對到最適合的性質。",
+      "intro": "請為每一項選擇最符合的分類或說明。",
+      "left": [
+        {
+          "id": "a",
+          "text": "保險費用"
+        },
+        {
+          "id": "b",
+          "text": "預付保險"
+        },
+        {
+          "id": "c",
+          "text": "累計折舊"
+        },
+        {
+          "id": "d",
+          "text": "折舊費用"
+        }
+      ],
+      "right": [
+        {
+          "id": "w",
+          "text": "本期費用"
+        },
+        {
+          "id": "x",
+          "text": "未耗用的資產"
+        },
+        {
+          "id": "y",
+          "text": "設備資產抵減"
+        },
+        {
+          "id": "z",
+          "text": "設備成本的當期分攤"
+        }
+      ],
+      "answer": {
+        "a": "w",
+        "b": "x",
+        "c": "y",
+        "d": "z"
+      },
+      "explanation": "保險費用與折舊費用屬費用；預付保險是資產；累計折舊抵減設備。",
+      "originalEnglish": "Match accounts to their accounting nature."
+    },
+    {
+      "id": "acct-2026-096",
+      "type": "match",
+      "topic": "財務報表",
+      "title": "請將報表名稱配對其主要用途。",
+      "intro": "請為每一項選擇最符合的分類或說明。",
+      "left": [
+        {
+          "id": "a",
+          "text": "損益表"
+        },
+        {
+          "id": "b",
+          "text": "資產負債表"
+        },
+        {
+          "id": "c",
+          "text": "現金流量表"
+        },
+        {
+          "id": "d",
+          "text": "權益變動表"
+        }
+      ],
+      "right": [
+        {
+          "id": "w",
+          "text": "列示期間收入、費用、損益"
+        },
+        {
+          "id": "x",
+          "text": "列示特定日期財務狀況"
+        },
+        {
+          "id": "y",
+          "text": "列示期間現金流入與流出"
+        },
+        {
+          "id": "z",
+          "text": "列示期間權益增減"
+        }
+      ],
+      "answer": {
+        "a": "w",
+        "b": "x",
+        "c": "y",
+        "d": "z"
+      },
+      "explanation": "四大報表分別反映經營成果、財務狀況、現金流量及權益變動。",
+      "originalEnglish": "Match each financial statement to its main purpose."
+    },
+    {
+      "id": "acct-2026-097",
+      "type": "match",
+      "topic": "調整分錄",
+      "title": "請將期末情況配對至調整類型。",
+      "intro": "請為每一項選擇最符合的分類或說明。",
+      "left": [
+        {
+          "id": "a",
+          "text": "薪資已發生但尚未支付"
+        },
+        {
+          "id": "b",
+          "text": "已收服務費但尚未全部履約"
+        },
+        {
+          "id": "c",
+          "text": "預付保險有部分已到期"
+        },
+        {
+          "id": "d",
+          "text": "設備本期產生折舊"
+        }
+      ],
+      "right": [
+        {
+          "id": "w",
+          "text": "應計費用"
+        },
+        {
+          "id": "x",
+          "text": "預收收入轉列"
+        },
+        {
+          "id": "y",
+          "text": "預付費用轉列"
+        },
+        {
+          "id": "z",
+          "text": "折舊分攤"
+        }
+      ],
+      "answer": {
+        "a": "w",
+        "b": "x",
+        "c": "y",
+        "d": "z"
+      },
+      "explanation": "期末調整依應計、預收轉列、預付轉列與折舊分攤分別處理。",
+      "originalEnglish": "Match period-end events with their adjusting entry types."
+    },
+    {
+      "id": "acct-2026-098",
+      "type": "match",
+      "topic": "借貸法則",
+      "title": "請將交易影響配對至正確的帳戶方向。",
+      "intro": "請為每一項選擇最符合的分類或說明。",
+      "left": [
+        {
+          "id": "a",
+          "text": "現金增加"
+        },
+        {
+          "id": "b",
+          "text": "應付帳款增加"
+        },
+        {
+          "id": "c",
+          "text": "薪資費用增加"
+        },
+        {
+          "id": "d",
+          "text": "服務收入增加"
+        }
+      ],
+      "right": [
+        {
+          "id": "w",
+          "text": "資產借記"
+        },
+        {
+          "id": "x",
+          "text": "負債貸記"
+        },
+        {
+          "id": "y",
+          "text": "費用借記"
+        },
+        {
+          "id": "z",
+          "text": "收入貸記"
+        }
+      ],
+      "answer": {
+        "a": "w",
+        "b": "x",
+        "c": "y",
+        "d": "z"
+      },
+      "explanation": "資產與費用增加記借方，負債與收入增加記貸方。",
+      "originalEnglish": "Match transactions with the correct debit or credit rule."
+    },
+    {
+      "id": "acct-2026-099",
+      "type": "image",
+      "topic": "T 字帳",
+      "title": "圖片點選：資產「現金」帳戶增加時，請點擊 T 字帳正確的一側。",
+      "intro": "請直接點選下圖借方或貸方的區域。",
+      "image": "./assets/t-account.svg",
+      "hotspots": [
+        {
+          "id": "debit",
+          "label": "借方（左側）",
+          "x1": 0,
+          "y1": 24,
+          "x2": 49.99,
+          "y2": 100
+        },
+        {
+          "id": "credit",
+          "label": "貸方（右側）",
+          "x1": 50,
+          "y1": 24,
+          "x2": 100,
+          "y2": 100
+        }
+      ],
+      "answer": "debit",
+      "explanation": "現金是資產，資產增加記借方。T 字帳左側為借方。",
+      "originalEnglish": "Click the correct T-account side to record an increase in Cash."
+    },
+    {
+      "id": "acct-2026-100",
+      "type": "image",
+      "topic": "T 字帳",
+      "title": "圖片點選：負債「應付帳款」增加時，請點擊 T 字帳正確的一側。",
+      "intro": "請直接點選下圖借方或貸方的區域。",
+      "image": "./assets/t-account.svg",
+      "hotspots": [
+        {
+          "id": "debit",
+          "label": "借方（左側）",
+          "x1": 0,
+          "y1": 24,
+          "x2": 49.99,
+          "y2": 100
+        },
+        {
+          "id": "credit",
+          "label": "貸方（右側）",
+          "x1": 50,
+          "y1": 24,
+          "x2": 100,
+          "y2": 100
+        }
+      ],
+      "answer": "credit",
+      "explanation": "應付帳款是負債，負債增加記貸方。T 字帳右側為貸方。",
+      "originalEnglish": "Click the correct T-account side to record an increase in Accounts Payable."
     }
   ]
 }
