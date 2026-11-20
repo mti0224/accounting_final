@@ -1,353 +1,988 @@
 {
-  "version": 1,
-  "kind": "demonstration",
-  "title": "會計學互動示範題庫（非原始PDF/MD題目）",
+  "version": 2,
+  "kind": "original-practice",
+  "title": "會計學期末：100 題原創練習題庫（依期中考題型自編，非原卷轉錄）",
+  "sourceNote": "參考使用者上傳的期中考題目與答案截圖之主題；題目均自行編寫。",
   "questions": [
     {
-      "id": "demo-a01",
+      "id": "acct-2026-001",
+      "topic": "會計基本觀念與分錄",
       "type": "single",
-      "title": "會計恆等式中，正確的關係為何？",
-      "intro": "請選出唯一正確的答案。",
+      "title": "下列哪一項不是企業的正式財務報表？",
+      "intro": "請選出唯一正確答案。",
       "choices": [
         {
           "id": "a",
-          "text": "資產 = 負債 + 權益"
+          "text": "試算表"
         },
         {
           "id": "b",
-          "text": "資產 = 負債 − 權益"
+          "text": "損益表"
         },
         {
           "id": "c",
-          "text": "負債 = 資產 + 權益"
+          "text": "資產負債表"
         },
         {
           "id": "d",
-          "text": "權益 = 負債 − 資產"
+          "text": "現金流量表"
         }
       ],
       "answer": "a",
-      "explanation": "會計恆等式為「資產＝負債＋權益」，意指企業資產的來源來自債權人與業主。",
-      "originalEnglish": "Which equation correctly represents the fundamental accounting equation?"
+      "explanation": "試算表用於檢查借貸合計，並非對外財務報表。",
+      "originalEnglish": "Which item is not a formal financial statement?"
     },
     {
-      "id": "demo-a02",
-      "type": "image",
-      "title": "請直接點擊 T 字帳中「借方（Debit）」的位置。",
-      "intro": "這是圖片點選題：請在下圖實際點擊對應區域，不是選擇題。",
-      "image": "./assets/t-account.svg",
-      "hotspots": [
-        {
-          "id": "debit",
-          "label": "借方",
-          "x1": 0,
-          "y1": 24,
-          "x2": 50,
-          "y2": 100
-        },
-        {
-          "id": "credit",
-          "label": "貸方",
-          "x1": 50,
-          "y1": 24,
-          "x2": 100,
-          "y2": 100
-        }
-      ],
-      "answer": "debit",
-      "explanation": "T 字帳的左側為借方（Debit），右側為貸方（Credit）。借貸是記帳方向，不直接等於增加或減少。",
-      "originalEnglish": "Click the DEBIT side of the T-account."
-    },
-    {
-      "id": "demo-a03",
-      "type": "filter",
-      "title": "請在資料表中篩選出所有「流動資產」。",
-      "intro": "可點選資料列進行多選，符合條件的資料列應全部選取。",
-      "columns": [
-        {
-          "key": "item",
-          "label": "會計項目"
-        },
-        {
-          "key": "category",
-          "label": "性質"
-        }
-      ],
-      "rows": [
-        {
-          "id": "a",
-          "item": "現金",
-          "category": "可立即使用的資金"
-        },
+      "id": "acct-2026-002",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "會計恆等式正確的敘述為何？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
         {
           "id": "b",
-          "item": "應收帳款",
-          "category": "預計一年內收回"
+          "text": "資產＝負債－權益"
         },
         {
           "id": "c",
-          "item": "機器設備",
-          "category": "預計長期使用"
+          "text": "負債＝資產＋權益"
         },
         {
           "id": "d",
-          "item": "預付三個月租金",
-          "category": "短期預付費用"
+          "text": "權益＝資產＋負債"
         },
         {
-          "id": "e",
-          "item": "長期投資",
-          "category": "預計持有超過一年"
+          "id": "a",
+          "text": "資產＝負債＋權益"
         }
       ],
-      "answer": [
-        "a",
-        "b",
-        "d"
-      ],
-      "explanation": "現金、應收帳款、短期預付費用通常列為流動資產。機器設備及長期投資不屬於流動資產。",
-      "originalEnglish": "Filter the table to select all current assets."
+      "answer": "a",
+      "explanation": "資產來自債權人及業主的財務來源，所以等於負債加權益。",
+      "originalEnglish": "Which expression represents the accounting equation?"
     },
     {
-      "id": "demo-a04",
-      "type": "order",
-      "title": "將會計記錄程序拖曳成正確的先後順序。",
-      "intro": "電腦可拖曳左側圖示，手機可使用 ↑／↓ 調整。",
-      "items": [
+      "id": "acct-2026-003",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "業主個人支出與公司營運支出應分開記錄，這是什麼假設？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
         {
-          "id": "ledger",
-          "text": "過帳到分類帳"
+          "id": "c",
+          "text": "貨幣衡量"
         },
         {
-          "id": "source",
-          "text": "取得並分析原始憑證"
+          "id": "d",
+          "text": "繼續經營"
         },
         {
-          "id": "trial",
-          "text": "編製試算表"
+          "id": "a",
+          "text": "企業個體"
         },
         {
-          "id": "journal",
-          "text": "登錄日記簿分錄"
+          "id": "b",
+          "text": "會計期間"
         }
       ],
-      "answer": [
-        "source",
-        "journal",
-        "ledger",
-        "trial"
-      ],
-      "explanation": "通常先分析交易及憑證，記錄日記簿分錄，再過帳至分類帳，最後編製試算表檢查借貸平衡。",
-      "originalEnglish": "Drag the accounting recording steps into the correct order."
+      "answer": "a",
+      "explanation": "企業個體假設把公司視為獨立會計主體。",
+      "originalEnglish": "Which assumption separates the owner from the business?"
     },
     {
-      "id": "demo-a05",
-      "type": "match",
-      "title": "請配對各會計科目所屬的類別。",
-      "intro": "每列選取一個分類，請完成所有配對。",
-      "left": [
+      "id": "acct-2026-004",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "公司假定未來能持續營運，主要符合哪一項假設？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
         {
-          "id": "cash",
-          "text": "現金"
+          "id": "d",
+          "text": "收入認列"
         },
         {
-          "id": "ap",
-          "text": "應付帳款"
+          "id": "a",
+          "text": "繼續經營"
         },
         {
-          "id": "capital",
+          "id": "b",
+          "text": "歷史成本"
+        },
+        {
+          "id": "c",
+          "text": "重要性"
+        }
+      ],
+      "answer": "a",
+      "explanation": "繼續經營假設以企業可預見未來仍持續經營為前提。",
+      "originalEnglish": "Which assumption means the entity will continue operating?"
+    },
+    {
+      "id": "acct-2026-005",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "將企業活動分成年度與月份，以便衡量損益，屬於何種假設？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "會計期間"
+        },
+        {
+          "id": "b",
+          "text": "企業個體"
+        },
+        {
+          "id": "c",
+          "text": "貨幣衡量"
+        },
+        {
+          "id": "d",
+          "text": "繼續經營"
+        }
+      ],
+      "answer": "a",
+      "explanation": "會計期間假設把連續經營活動分段。",
+      "originalEnglish": "Which assumption divides a business into reporting periods?"
+    },
+    {
+      "id": "acct-2026-006",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "新買設備原始入帳一般採用何種衡量基礎？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "預估未來售價"
+        },
+        {
+          "id": "c",
+          "text": "清算價值"
+        },
+        {
+          "id": "d",
+          "text": "業主主觀評價"
+        },
+        {
+          "id": "a",
+          "text": "歷史成本"
+        }
+      ],
+      "answer": "a",
+      "explanation": "新購設備一般以取得成本原始入帳。",
+      "originalEnglish": "At what amount is purchased equipment initially recorded?"
+    },
+    {
+      "id": "acct-2026-007",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "資產科目增加時，通常應登記哪一方？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "不需記錄"
+        },
+        {
+          "id": "d",
+          "text": "現金流量欄"
+        },
+        {
+          "id": "a",
+          "text": "借方"
+        },
+        {
+          "id": "b",
+          "text": "貸方"
+        }
+      ],
+      "answer": "a",
+      "explanation": "資產增加記借方，減少記貸方。",
+      "originalEnglish": "Which side records an increase in an asset?"
+    },
+    {
+      "id": "acct-2026-008",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "負債科目增加時，通常應登記哪一方？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "任意一方"
+        },
+        {
+          "id": "a",
+          "text": "貸方"
+        },
+        {
+          "id": "b",
+          "text": "借方"
+        },
+        {
+          "id": "c",
+          "text": "不需記錄"
+        }
+      ],
+      "answer": "a",
+      "explanation": "負債增加記貸方，減少記借方。",
+      "originalEnglish": "Which side records an increase in a liability?"
+    },
+    {
+      "id": "acct-2026-009",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "服務收入增加應記錄在哪一方？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "貸方"
+        },
+        {
+          "id": "b",
+          "text": "借方"
+        },
+        {
+          "id": "c",
+          "text": "試算表註記"
+        },
+        {
+          "id": "d",
+          "text": "資產抵減欄"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入增加通常貸記，費用增加通常借記。",
+      "originalEnglish": "Which side records an increase in service revenue?"
+    },
+    {
+      "id": "acct-2026-010",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "薪資費用增加時應記錄在哪一方？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "貸方"
+        },
+        {
+          "id": "c",
+          "text": "現金欄"
+        },
+        {
+          "id": "d",
+          "text": "不需記錄"
+        },
+        {
+          "id": "a",
+          "text": "借方"
+        }
+      ],
+      "answer": "a",
+      "explanation": "費用科目增加通常借記。",
+      "originalEnglish": "Which side records an increase in salaries expense?"
+    },
+    {
+      "id": "acct-2026-011",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "公司以現金購入設備，正確分錄是什麼？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "借應付帳款，貸設備"
+        },
+        {
+          "id": "d",
+          "text": "借薪資費用，貸現金"
+        },
+        {
+          "id": "a",
+          "text": "借設備，貸現金"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸設備"
+        }
+      ],
+      "answer": "a",
+      "explanation": "設備增加而現金減少，均屬資產內部變化。",
+      "originalEnglish": "Which entry records equipment purchased for cash?"
+    },
+    {
+      "id": "acct-2026-012",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "公司賒購辦公用品，正確分錄是什麼？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "借保險費用，貸現金"
+        },
+        {
+          "id": "a",
+          "text": "借辦公用品，貸應付帳款"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸辦公用品"
+        },
+        {
+          "id": "c",
+          "text": "借應付帳款，貸辦公用品"
+        }
+      ],
+      "answer": "a",
+      "explanation": "用品增加為資產借記，應付帳款增加為負債貸記。",
+      "originalEnglish": "Which entry records office supplies purchased on account?"
+    },
+    {
+      "id": "acct-2026-013",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "提供服務並同意客戶延後付款，應如何入帳？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "借應收帳款，貸服務收入"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸服務收入"
+        },
+        {
+          "id": "c",
+          "text": "借服務收入，貸應收帳款"
+        },
+        {
+          "id": "d",
+          "text": "借應付帳款，貸服務收入"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入已賺得但未收到現金，產生應收帳款。",
+      "originalEnglish": "Which entry records services performed on account?"
+    },
+    {
+      "id": "acct-2026-014",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "公司向客戶收取尚未提供服務的預付款，應貸記哪個科目？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "服務收入"
+        },
+        {
+          "id": "c",
+          "text": "應收帳款"
+        },
+        {
+          "id": "d",
           "text": "業主資本"
         },
         {
-          "id": "sales",
-          "text": "銷貨收入"
+          "id": "a",
+          "text": "預收服務收入"
         }
       ],
-      "right": [
+      "answer": "a",
+      "explanation": "服務尚未完成形成履約負債，應記為預收收入。",
+      "originalEnglish": "What is credited for cash received before services are performed?"
+    },
+    {
+      "id": "acct-2026-015",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "公司用現金償還先前帳上的應付帳款，應如何入帳？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
         {
-          "id": "asset",
-          "text": "資產"
+          "id": "c",
+          "text": "借費用，貸現金"
         },
         {
-          "id": "liability",
+          "id": "d",
+          "text": "借應收帳款，貸現金"
+        },
+        {
+          "id": "a",
+          "text": "借應付帳款，貸現金"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸應付帳款"
+        }
+      ],
+      "answer": "a",
+      "explanation": "支付已入帳的負債不應再次認列費用。",
+      "originalEnglish": "Which entry records payment of an existing account payable?"
+    },
+    {
+      "id": "acct-2026-016",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "客戶以現金償還已入帳的應收帳款，應如何入帳？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "借服務收入，貸現金"
+        },
+        {
+          "id": "a",
+          "text": "借現金，貸應收帳款"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸服務收入"
+        },
+        {
+          "id": "c",
+          "text": "借應收帳款，貸現金"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收回欠款只是現金增加與應收帳款減少。",
+      "originalEnglish": "Which entry records collection of an account receivable?"
+    },
+    {
+      "id": "acct-2026-017",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "期末薪資已發生但尚未支付，應如何調整？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "借薪資費用，貸應付薪資"
+        },
+        {
+          "id": "b",
+          "text": "借現金，貸薪資費用"
+        },
+        {
+          "id": "c",
+          "text": "借應付薪資，貸現金"
+        },
+        {
+          "id": "d",
+          "text": "借預付薪資，貸應付薪資"
+        }
+      ],
+      "answer": "a",
+      "explanation": "已發生的薪資應在本期認列費用及負債。",
+      "originalEnglish": "Which entry records accrued wages?"
+    },
+    {
+      "id": "acct-2026-018",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "預付保險有一部分本期已到期，應如何調整？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "借預付保險，貸保險費用"
+        },
+        {
+          "id": "c",
+          "text": "借現金，貸保險費用"
+        },
+        {
+          "id": "d",
+          "text": "借應付帳款，貸預付保險"
+        },
+        {
+          "id": "a",
+          "text": "借保險費用，貸預付保險"
+        }
+      ],
+      "answer": "a",
+      "explanation": "已耗用保險由資產轉為本期費用。",
+      "originalEnglish": "Which adjusting entry records expired insurance?"
+    },
+    {
+      "id": "acct-2026-019",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "原先記為預收租金的部分租金已賺得，應如何調整？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "借現金，貸預收租金"
+        },
+        {
+          "id": "d",
+          "text": "借應收租金，貸現金"
+        },
+        {
+          "id": "a",
+          "text": "借預收租金，貸租金收入"
+        },
+        {
+          "id": "b",
+          "text": "借租金收入，貸預收租金"
+        }
+      ],
+      "answer": "a",
+      "explanation": "履約後預收負債減少，收入增加。",
+      "originalEnglish": "What entry recognizes rent earned from previously unearned rent?"
+    },
+    {
+      "id": "acct-2026-020",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "本期設備折舊未入帳，應採用哪個調整分錄？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "借現金，貸折舊費用"
+        },
+        {
+          "id": "a",
+          "text": "借折舊費用，貸累計折舊"
+        },
+        {
+          "id": "b",
+          "text": "借設備，貸折舊費用"
+        },
+        {
+          "id": "c",
+          "text": "借累計折舊，貸設備"
+        }
+      ],
+      "answer": "a",
+      "explanation": "折舊費用為借方，累計折舊為資產抵減科目貸方。",
+      "originalEnglish": "Which adjustment records depreciation expense?"
+    },
+    {
+      "id": "acct-2026-021",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "累計折舊屬於何種科目？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "資產抵減科目"
+        },
+        {
+          "id": "b",
+          "text": "流動負債"
+        },
+        {
+          "id": "c",
+          "text": "營業收入"
+        },
+        {
+          "id": "d",
+          "text": "業主投入資本"
+        }
+      ],
+      "answer": "a",
+      "explanation": "累計折舊從設備成本扣除以求帳面金額。",
+      "originalEnglish": "How is accumulated depreciation classified?"
+    },
+    {
+      "id": "acct-2026-022",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "試算表借貸平衡是否保證沒有錯誤？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "保證所有科目均正確"
+        },
+        {
+          "id": "c",
+          "text": "保證公司有淨利"
+        },
+        {
+          "id": "d",
+          "text": "保證現金沒有短缺"
+        },
+        {
+          "id": "a",
+          "text": "不保證，仍可能漏記交易"
+        }
+      ],
+      "answer": "a",
+      "explanation": "交易完全漏記或記錯帳戶時，試算表仍可能平衡。",
+      "originalEnglish": "Does a balanced trial balance prove all entries are correct?"
+    },
+    {
+      "id": "acct-2026-023",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "記錄交易分錄的時間順序，主要使用哪種帳簿？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "損益表"
+        },
+        {
+          "id": "d",
+          "text": "資產負債表"
+        },
+        {
+          "id": "a",
+          "text": "日記簿"
+        },
+        {
+          "id": "b",
+          "text": "分類帳"
+        }
+      ],
+      "answer": "a",
+      "explanation": "日記簿依日期順序記錄交易。",
+      "originalEnglish": "Which book records transactions chronologically?"
+    },
+    {
+      "id": "acct-2026-024",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "要查看應收帳款的累積借貸與餘額，應檢視何處？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "財務預算表"
+        },
+        {
+          "id": "a",
+          "text": "分類帳"
+        },
+        {
+          "id": "b",
+          "text": "日記簿封面"
+        },
+        {
+          "id": "c",
+          "text": "現金流量表"
+        }
+      ],
+      "answer": "a",
+      "explanation": "分類帳按科目分類、彙總並計算餘額。",
+      "originalEnglish": "Where are individual account balances summarized?"
+    },
+    {
+      "id": "acct-2026-025",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "哪張報表用來呈現某段期間的收入、費用與淨利？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "損益表"
+        },
+        {
+          "id": "b",
+          "text": "資產負債表"
+        },
+        {
+          "id": "c",
+          "text": "試算表"
+        },
+        {
+          "id": "d",
+          "text": "現金出納簿"
+        }
+      ],
+      "answer": "a",
+      "explanation": "損益表衡量某段期間的經營成果。",
+      "originalEnglish": "Which statement reports revenue, expenses, and profit?"
+    },
+    {
+      "id": "acct-2026-026",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "哪張報表呈現特定日期的資產、負債與權益？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "損益表"
+        },
+        {
+          "id": "c",
+          "text": "日記簿"
+        },
+        {
+          "id": "d",
+          "text": "營業日報表"
+        },
+        {
+          "id": "a",
+          "text": "資產負債表"
+        }
+      ],
+      "answer": "a",
+      "explanation": "資產負債表是特定時點的財務狀況。",
+      "originalEnglish": "Which statement reports financial position at a date?"
+    },
+    {
+      "id": "acct-2026-027",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "期末用品盤點少於帳列數量，通常要認列什麼？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "長期借款"
+        },
+        {
+          "id": "d",
+          "text": "保留盈餘增加"
+        },
+        {
+          "id": "a",
+          "text": "用品費用"
+        },
+        {
+          "id": "b",
+          "text": "預收收入"
+        }
+      ],
+      "answer": "a",
+      "explanation": "已耗用用品由資產轉列本期費用。",
+      "originalEnglish": "What account is increased when office supplies are consumed?"
+    },
+    {
+      "id": "acct-2026-028",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "臺灣上市公司通常適用哪套財務報導準則？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "只遵循稅法"
+        },
+        {
+          "id": "a",
+          "text": "經主管機關認可的 IFRS"
+        },
+        {
+          "id": "b",
+          "text": "只採美國 US GAAP"
+        },
+        {
+          "id": "c",
+          "text": "任意自行制定"
+        }
+      ],
+      "answer": "a",
+      "explanation": "臺灣上市公司主要依主管機關認可的 IFRS 與相關規定報導。",
+      "originalEnglish": "Which reporting standards generally apply to listed companies in Taiwan?"
+    },
+    {
+      "id": "acct-2026-029",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "結帳分錄的主要目的為何？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "結清收入與費用等暫時性科目"
+        },
+        {
+          "id": "b",
+          "text": "將全部資產歸零"
+        },
+        {
+          "id": "c",
+          "text": "關閉銀行帳戶"
+        },
+        {
+          "id": "d",
+          "text": "強制修改發票"
+        }
+      ],
+      "answer": "a",
+      "explanation": "將本期暫時性科目結清，使下期重新累積。",
+      "originalEnglish": "What is the purpose of closing entries?"
+    },
+    {
+      "id": "acct-2026-030",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "設備帳面金額一般如何計算？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "b",
+          "text": "原始成本加累計折舊"
+        },
+        {
+          "id": "c",
+          "text": "資產減負債"
+        },
+        {
+          "id": "d",
+          "text": "現金減收入"
+        },
+        {
+          "id": "a",
+          "text": "原始成本減累計折舊"
+        }
+      ],
+      "answer": "a",
+      "explanation": "若不考慮減損，設備帳面金額為成本減累計折舊。",
+      "originalEnglish": "How is equipment carrying amount generally calculated?"
+    },
+    {
+      "id": "acct-2026-031",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "收到服務收入的現金屬於哪一種現金流量？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "c",
+          "text": "籌資活動現金流入"
+        },
+        {
+          "id": "d",
+          "text": "非現金交易"
+        },
+        {
+          "id": "a",
+          "text": "營業活動現金流入"
+        },
+        {
+          "id": "b",
+          "text": "投資活動現金流出"
+        }
+      ],
+      "answer": "a",
+      "explanation": "企業日常提供服務之收款通常為營業活動。",
+      "originalEnglish": "How is cash collected from service customers classified?"
+    },
+    {
+      "id": "acct-2026-032",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "收入已賺得，即使尚未收到現金，也應認列，這屬於何種基礎？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "d",
+          "text": "存貨永續盤存制"
+        },
+        {
+          "id": "a",
+          "text": "權責發生基礎"
+        },
+        {
+          "id": "b",
+          "text": "現金基礎"
+        },
+        {
+          "id": "c",
+          "text": "清算基礎"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權責發生基礎在賺得時認列收入，而非依現金時點。",
+      "originalEnglish": "Which basis recognizes earned revenues before cash receipt?"
+    },
+    {
+      "id": "acct-2026-033",
+      "topic": "會計基本觀念與分錄",
+      "type": "single",
+      "title": "尚未提供服務的預收服務收入通常列為何種性質？",
+      "intro": "請選出唯一正確答案。",
+      "choices": [
+        {
+          "id": "a",
           "text": "負債"
         },
         {
-          "id": "equity",
-          "text": "權益"
-        },
-        {
-          "id": "revenue",
+          "id": "b",
           "text": "收入"
-        }
-      ],
-      "answer": {
-        "cash": "asset",
-        "ap": "liability",
-        "capital": "equity",
-        "sales": "revenue"
-      },
-      "explanation": "現金屬於資產；應付帳款是負債；業主資本是權益；銷貨收入屬於收入。",
-      "originalEnglish": "Match each account title to its account category."
-    },
-    {
-      "id": "demo-a06",
-      "type": "multiple",
-      "title": "關於權責發生基礎，哪些敘述正確？（複選）",
-      "intro": "可選取一個以上的答案。",
-      "choices": [
-        {
-          "id": "a",
-          "text": "收入在已賺得時認列，不一定等到收到現金。"
-        },
-        {
-          "id": "b",
-          "text": "所有費用只能在支付現金後認列。"
         },
         {
           "id": "c",
-          "text": "費用依其發生期間認列。"
+          "text": "費用"
         },
         {
           "id": "d",
-          "text": "權責發生基礎與現金基礎完全相同。"
+          "text": "資產抵減"
         }
       ],
-      "answer": [
-        "a",
-        "c"
-      ],
-      "explanation": "權責發生基礎重視收入實現與費用發生的期間，即使現金尚未收付也須適時認列。",
-      "originalEnglish": "Which statements about accrual accounting are correct? Select all that apply."
+      "answer": "a",
+      "explanation": "未完成履約義務前屬負債。",
+      "originalEnglish": "What is the nature of unearned service revenue?"
     },
     {
-      "id": "demo-a07",
+      "id": "acct-2026-034",
+      "topic": "會計基本觀念與分錄",
       "type": "single",
-      "title": "公司以現金購買辦公設備 20,000 元，對會計恆等式的影響為何？",
+      "title": "應收帳款被貸記，通常表示該項資產如何變化？",
+      "intro": "請選出唯一正確答案。",
       "choices": [
         {
-          "id": "a",
-          "text": "總資產增加 20,000 元"
-        },
-        {
           "id": "b",
-          "text": "總資產減少 20,000 元"
+          "text": "增加"
         },
         {
           "id": "c",
-          "text": "總資產不變"
+          "text": "不變"
         },
         {
           "id": "d",
-          "text": "負債增加 20,000 元"
-        }
-      ],
-      "answer": "c",
-      "explanation": "設備（資產）增加 20,000，現金（資產）同額減少，因此資產總額不變。",
-      "originalEnglish": "A company purchases equipment for cash. What is the effect on total assets?"
-    },
-    {
-      "id": "demo-a08",
-      "type": "filter",
-      "title": "請篩選出需要「調整分錄」的情況。",
-      "intro": "勾選表格中所有需要期末調整的資料列。",
-      "columns": [
-        {
-          "key": "item",
-          "label": "情況"
+          "text": "轉為負債"
         },
-        {
-          "key": "category",
-          "label": "期末狀態"
-        }
-      ],
-      "rows": [
         {
           "id": "a",
-          "item": "預付租金部分已到期",
-          "category": "尚未轉列費用"
-        },
-        {
-          "id": "b",
-          "item": "本期應付薪資尚未入帳",
-          "category": "已發生未支付"
-        },
-        {
-          "id": "c",
-          "item": "收到現金並立即完成服務",
-          "category": "已當期正確入帳"
-        },
-        {
-          "id": "d",
-          "item": "設備本期折舊尚未認列",
-          "category": "尚未提列折舊"
+          "text": "減少"
         }
       ],
-      "answer": [
-        "a",
-        "b",
-        "d"
-      ],
-      "explanation": "預付費用到期、應計費用及折舊均為常見期末調整事項；已正確入帳的即時交易不需重複調整。",
-      "originalEnglish": "Filter all cases requiring an adjusting journal entry."
+      "answer": "a",
+      "explanation": "應收帳款為資產，貸記使其減少。",
+      "originalEnglish": "What happens when accounts receivable is credited?"
     },
     {
-      "id": "demo-a09",
+      "id": "acct-2026-035",
+      "topic": "會計基本觀念與分錄",
       "type": "single",
-      "title": "期初應收帳款 15,000 元，本期賒銷 30,000 元，本期收回帳款 20,000 元。期末應收帳款為多少？",
+      "title": "財務狀況表最適合使用何種日期標示？",
+      "intro": "請選出唯一正確答案。",
       "choices": [
         {
-          "id": "a",
-          "text": "5,000 元"
-        },
-        {
-          "id": "b",
-          "text": "25,000 元"
-        },
-        {
           "id": "c",
-          "text": "35,000 元"
+          "text": "2026 年 1 月至 12 月"
         },
         {
           "id": "d",
-          "text": "65,000 元"
+          "text": "企業設立後所有年份"
+        },
+        {
+          "id": "a",
+          "text": "2026 年 12 月 31 日"
+        },
+        {
+          "id": "b",
+          "text": "截至 2026 年 12 月 31 日止年度"
         }
       ],
-      "answer": "b",
-      "explanation": "期末應收帳款＝期初 15,000＋本期賒銷 30,000－本期收款 20,000＝25,000 元。",
-      "originalEnglish": "Beginning receivables are 15,000, credit sales 30,000 and collections 20,000. Find ending receivables."
-    },
-    {
-      "id": "demo-a10",
-      "type": "order",
-      "title": "請將下列數字依財務報表編製流程排序。",
-      "intro": "本題考核報表間的承接關係。",
-      "items": [
-        {
-          "id": "balance",
-          "text": "將期末權益帶入資產負債表"
-        },
-        {
-          "id": "net",
-          "text": "計算本期淨利"
-        },
-        {
-          "id": "equity",
-          "text": "計算期末權益"
-        },
-        {
-          "id": "revenue",
-          "text": "彙總本期收入與費用"
-        }
-      ],
-      "answer": [
-        "revenue",
-        "net",
-        "equity",
-        "balance"
-      ],
-      "explanation": "先彙總收入費用算出淨利，再依淨利與業主變動求期末權益，最後帶入資產負債表。",
-      "originalEnglish": "Arrange the financial statement preparation steps in a logical sequence."
+      "answer": "a",
+      "explanation": "財務狀況表呈現單一日期的資產、負債與權益。",
+      "originalEnglish": "What date heading fits a statement of financial position?"
     }
   ]
 }
