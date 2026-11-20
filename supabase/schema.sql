@@ -16,6 +16,7 @@ create table if not exists public.profiles (
 create table if not exists public.results (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references public.profiles(id) on delete cascade,
+  mode text not null default 'exam' check (mode in ('exam','practice')),
   score integer not null check (score between 0 and 1000),
   passed boolean not null,
   answered integer not null,
@@ -24,6 +25,8 @@ create table if not exists public.results (
   created_at timestamptz not null default now(),
   constraint results_answered_range check (answered between 0 and total)
 );
+
+alter table public.results add column if not exists mode text not null default 'exam' check (mode in ('exam','practice'));
 
 create or replace function public.handle_new_user()
 returns trigger
