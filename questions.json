@@ -983,6 +983,681 @@
       "answer": "a",
       "explanation": "財務狀況表呈現單一日期的資產、負債與權益。",
       "originalEnglish": "What date heading fits a statement of financial position?"
+    },
+    {
+      "id": "acct-2026-036",
+      "topic": "會計恆等式計算",
+      "type": "single",
+      "title": "海光公司年底資產總額為 NT$600,000，負債總額為 NT$250,000。期末權益是多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$850,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$350,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$600,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$250,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權益＝資產－負債＝NT$600,000－NT$250,000＝NT$350,000。",
+      "originalEnglish": "Given year-end assets and liabilities, find equity."
+    },
+    {
+      "id": "acct-2026-037",
+      "topic": "會計恆等式計算",
+      "type": "single",
+      "title": "海光公司年底資產總額為 NT$725,000，負債總額為 NT$310,000。期末權益是多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$415,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$725,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$310,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$1,035,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權益＝資產－負債＝NT$725,000－NT$310,000＝NT$415,000。",
+      "originalEnglish": "Given year-end assets and liabilities, find equity."
+    },
+    {
+      "id": "acct-2026-038",
+      "topic": "會計恆等式計算",
+      "type": "single",
+      "title": "海光公司年底資產總額為 NT$480,000，負債總額為 NT$190,000。期末權益是多少？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$480,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$190,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$670,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$290,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權益＝資產－負債＝NT$480,000－NT$190,000＝NT$290,000。",
+      "originalEnglish": "Given year-end assets and liabilities, find equity."
+    },
+    {
+      "id": "acct-2026-039",
+      "topic": "會計恆等式計算",
+      "type": "single",
+      "title": "海光公司年底資產總額為 NT$890,000，負債總額為 NT$420,000。期末權益是多少？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$420,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$1,310,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$470,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$890,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權益＝資產－負債＝NT$890,000－NT$420,000＝NT$470,000。",
+      "originalEnglish": "Given year-end assets and liabilities, find equity."
+    },
+    {
+      "id": "acct-2026-040",
+      "topic": "會計恆等式計算",
+      "type": "single",
+      "title": "海光公司年底資產總額為 NT$530,000，負債總額為 NT$280,000。期末權益是多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$810,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$250,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$530,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$280,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "權益＝資產－負債＝NT$530,000－NT$280,000＝NT$250,000。",
+      "originalEnglish": "Given year-end assets and liabilities, find equity."
+    },
+    {
+      "id": "acct-2026-041",
+      "topic": "折舊與帳面金額",
+      "type": "single",
+      "title": "啟明公司設備成本 NT$1,000,000，估計殘值 NT$100,000，耐用年限 10 年，採直線法，已使用 3 年。此設備帳面金額是多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$730,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$1,000,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$90,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$900,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "年折舊＝（NT$1,000,000－NT$100,000）÷10＝NT$90,000；帳面金額＝成本－年折舊×3＝NT$730,000。",
+      "originalEnglish": "Find equipment book value using straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-042",
+      "topic": "折舊與帳面金額",
+      "type": "single",
+      "title": "啟明公司設備成本 NT$800,000，估計殘值 NT$80,000，耐用年限 8 年，採直線法，已使用 2 年。此設備帳面金額是多少？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$800,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$90,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$720,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$620,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "年折舊＝（NT$800,000－NT$80,000）÷8＝NT$90,000；帳面金額＝成本－年折舊×2＝NT$620,000。",
+      "originalEnglish": "Find equipment book value using straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-043",
+      "topic": "折舊與帳面金額",
+      "type": "single",
+      "title": "啟明公司設備成本 NT$600,000，估計殘值 NT$60,000，耐用年限 6 年，採直線法，已使用 4 年。此設備帳面金額是多少？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$90,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$540,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$240,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$600,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "年折舊＝（NT$600,000－NT$60,000）÷6＝NT$90,000；帳面金額＝成本－年折舊×4＝NT$240,000。",
+      "originalEnglish": "Find equipment book value using straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-044",
+      "topic": "折舊與帳面金額",
+      "type": "single",
+      "title": "啟明公司設備成本 NT$360,000，估計殘值 NT$60,000，耐用年限 5 年，採直線法，已使用 3 年。此設備帳面金額是多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$300,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$180,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$360,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$60,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "年折舊＝（NT$360,000－NT$60,000）÷5＝NT$60,000；帳面金額＝成本－年折舊×3＝NT$180,000。",
+      "originalEnglish": "Find equipment book value using straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-045",
+      "topic": "折舊與帳面金額",
+      "type": "single",
+      "title": "啟明公司設備成本 NT$540,000，估計殘值 NT$90,000，耐用年限 9 年，採直線法，已使用 4 年。此設備帳面金額是多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$340,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$540,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$50,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$450,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "年折舊＝（NT$540,000－NT$90,000）÷9＝NT$50,000；帳面金額＝成本－年折舊×4＝NT$340,000。",
+      "originalEnglish": "Find equipment book value using straight-line depreciation."
+    },
+    {
+      "id": "acct-2026-046",
+      "topic": "用品調整分錄",
+      "type": "single",
+      "title": "期初辦公用品 NT$4,500，本期再購買 NT$3,200，年底盤點剩餘 NT$1,700。本期應認列辦公用品費用多少？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$7,700"
+        },
+        {
+          "id": "c",
+          "text": "NT$1,700"
+        },
+        {
+          "id": "d",
+          "text": "NT$3,200"
+        },
+        {
+          "id": "a",
+          "text": "NT$6,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耗用＝期初用品＋本期購入－期末餘額＝NT$4,500＋NT$3,200－NT$1,700＝NT$6,000。",
+      "originalEnglish": "Calculate supplies expense from beginning balance, purchases and ending inventory."
+    },
+    {
+      "id": "acct-2026-047",
+      "topic": "用品調整分錄",
+      "type": "single",
+      "title": "期初辦公用品 NT$6,000，本期再購買 NT$2,500，年底盤點剩餘 NT$1,800。本期應認列辦公用品費用多少？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$1,800"
+        },
+        {
+          "id": "d",
+          "text": "NT$2,500"
+        },
+        {
+          "id": "a",
+          "text": "NT$6,700"
+        },
+        {
+          "id": "b",
+          "text": "NT$8,500"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耗用＝期初用品＋本期購入－期末餘額＝NT$6,000＋NT$2,500－NT$1,800＝NT$6,700。",
+      "originalEnglish": "Calculate supplies expense from beginning balance, purchases and ending inventory."
+    },
+    {
+      "id": "acct-2026-048",
+      "topic": "用品調整分錄",
+      "type": "single",
+      "title": "期初辦公用品 NT$3,800，本期再購買 NT$5,400，年底盤點剩餘 NT$2,100。本期應認列辦公用品費用多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$5,400"
+        },
+        {
+          "id": "a",
+          "text": "NT$7,100"
+        },
+        {
+          "id": "b",
+          "text": "NT$9,200"
+        },
+        {
+          "id": "c",
+          "text": "NT$2,100"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耗用＝期初用品＋本期購入－期末餘額＝NT$3,800＋NT$5,400－NT$2,100＝NT$7,100。",
+      "originalEnglish": "Calculate supplies expense from beginning balance, purchases and ending inventory."
+    },
+    {
+      "id": "acct-2026-049",
+      "topic": "用品調整分錄",
+      "type": "single",
+      "title": "期初辦公用品 NT$2,500，本期再購買 NT$1,800，年底盤點剩餘 NT$900。本期應認列辦公用品費用多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$3,400"
+        },
+        {
+          "id": "b",
+          "text": "NT$4,300"
+        },
+        {
+          "id": "c",
+          "text": "NT$900"
+        },
+        {
+          "id": "d",
+          "text": "NT$1,800"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耗用＝期初用品＋本期購入－期末餘額＝NT$2,500＋NT$1,800－NT$900＝NT$3,400。",
+      "originalEnglish": "Calculate supplies expense from beginning balance, purchases and ending inventory."
+    },
+    {
+      "id": "acct-2026-050",
+      "topic": "用品調整分錄",
+      "type": "single",
+      "title": "期初辦公用品 NT$7,200，本期再購買 NT$3,800，年底盤點剩餘 NT$3,200。本期應認列辦公用品費用多少？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$11,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$3,200"
+        },
+        {
+          "id": "d",
+          "text": "NT$3,800"
+        },
+        {
+          "id": "a",
+          "text": "NT$7,800"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耗用＝期初用品＋本期購入－期末餘額＝NT$7,200＋NT$3,800－NT$3,200＝NT$7,800。",
+      "originalEnglish": "Calculate supplies expense from beginning balance, purchases and ending inventory."
+    },
+    {
+      "id": "acct-2026-051",
+      "topic": "預收租金與收入認列",
+      "type": "single",
+      "title": "2026 年 9 月 1 日，公司預收 8 個月租金 NT$64,000，當時全數貸記預收租金。至 2026/12/31 應認列多少租金收入？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$8,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$33,400"
+        },
+        {
+          "id": "a",
+          "text": "NT$32,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$64,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "每月租金＝NT$64,000÷8＝NT$8,000；已經過 4 個月，所以收入＝NT$32,000。",
+      "originalEnglish": "How much advance rent is earned by December 31, 2026?"
+    },
+    {
+      "id": "acct-2026-052",
+      "topic": "預收租金與收入認列",
+      "type": "single",
+      "title": "2026 年 11 月 1 日，公司預收 4 個月租金 NT$20,000，當時全數貸記預收租金。至 2026/12/31 應認列多少租金收入？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$11,400"
+        },
+        {
+          "id": "a",
+          "text": "NT$10,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$20,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$5,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "每月租金＝NT$20,000÷4＝NT$5,000；已經過 2 個月，所以收入＝NT$10,000。",
+      "originalEnglish": "How much advance rent is earned by December 31, 2026?"
+    },
+    {
+      "id": "acct-2026-053",
+      "topic": "預收租金與收入認列",
+      "type": "single",
+      "title": "2026 年 7 月 1 日，公司預收 12 個月租金 NT$72,000，當時全數貸記預收租金。至 2026/12/31 應認列多少租金收入？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$36,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$72,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$6,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$37,400"
+        }
+      ],
+      "answer": "a",
+      "explanation": "每月租金＝NT$72,000÷12＝NT$6,000；已經過 6 個月，所以收入＝NT$36,000。",
+      "originalEnglish": "How much advance rent is earned by December 31, 2026?"
+    },
+    {
+      "id": "acct-2026-054",
+      "topic": "預收租金與收入認列",
+      "type": "single",
+      "title": "2026 年 12 月 1 日，公司預收 6 個月租金 NT$18,000，當時全數貸記預收租金。至 2026/12/31 應認列多少租金收入？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$18,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$15,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$4,400"
+        },
+        {
+          "id": "a",
+          "text": "NT$3,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "每月租金＝NT$18,000÷6＝NT$3,000；已經過 1 個月，所以收入＝NT$3,000。",
+      "originalEnglish": "How much advance rent is earned by December 31, 2026?"
+    },
+    {
+      "id": "acct-2026-055",
+      "topic": "預收租金與收入認列",
+      "type": "single",
+      "title": "2026 年 10 月 1 日，公司預收 6 個月租金 NT$42,000，當時全數貸記預收租金。至 2026/12/31 應認列多少租金收入？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$7,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$22,400"
+        },
+        {
+          "id": "a",
+          "text": "NT$21,000"
+        },
+        {
+          "id": "b",
+          "text": "NT$42,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "每月租金＝NT$42,000÷6＝NT$7,000；已經過 3 個月，所以收入＝NT$21,000。",
+      "originalEnglish": "How much advance rent is earned by December 31, 2026?"
+    },
+    {
+      "id": "acct-2026-056",
+      "topic": "損益表與淨利計算",
+      "type": "single",
+      "title": "大華公司本年度服務收入 NT$22,000、租金收入 NT$12,500，各項費用合計 NT$7,705。本期淨利為多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$14,295"
+        },
+        {
+          "id": "a",
+          "text": "NT$26,795"
+        },
+        {
+          "id": "b",
+          "text": "NT$34,500"
+        },
+        {
+          "id": "c",
+          "text": "NT$7,705"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入合計＝NT$22,000＋NT$12,500＝NT$34,500；淨利＝NT$34,500－NT$7,705＝NT$26,795。",
+      "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
+    },
+    {
+      "id": "acct-2026-057",
+      "topic": "損益表與淨利計算",
+      "type": "single",
+      "title": "大華公司本年度服務收入 NT$45,000、租金收入 NT$15,000，各項費用合計 NT$18,500。本期淨利為多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NT$41,500"
+        },
+        {
+          "id": "b",
+          "text": "NT$60,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$18,500"
+        },
+        {
+          "id": "d",
+          "text": "NT$26,500"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入合計＝NT$45,000＋NT$15,000＝NT$60,000；淨利＝NT$60,000－NT$18,500＝NT$41,500。",
+      "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
+    },
+    {
+      "id": "acct-2026-058",
+      "topic": "損益表與淨利計算",
+      "type": "single",
+      "title": "大華公司本年度服務收入 NT$36,000、租金收入 NT$9,000，各項費用合計 NT$22,000。本期淨利為多少？",
+      "choices": [
+        {
+          "id": "b",
+          "text": "NT$45,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$22,000"
+        },
+        {
+          "id": "d",
+          "text": "NT$14,000"
+        },
+        {
+          "id": "a",
+          "text": "NT$23,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入合計＝NT$36,000＋NT$9,000＝NT$45,000；淨利＝NT$45,000－NT$22,000＝NT$23,000。",
+      "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
+    },
+    {
+      "id": "acct-2026-059",
+      "topic": "損益表與淨利計算",
+      "type": "single",
+      "title": "大華公司本年度服務收入 NT$58,000、租金收入 NT$12,000，各項費用合計 NT$31,400。本期淨利為多少？",
+      "choices": [
+        {
+          "id": "c",
+          "text": "NT$31,400"
+        },
+        {
+          "id": "d",
+          "text": "NT$26,600"
+        },
+        {
+          "id": "a",
+          "text": "NT$38,600"
+        },
+        {
+          "id": "b",
+          "text": "NT$70,000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入合計＝NT$58,000＋NT$12,000＝NT$70,000；淨利＝NT$70,000－NT$31,400＝NT$38,600。",
+      "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
+    },
+    {
+      "id": "acct-2026-060",
+      "topic": "損益表與淨利計算",
+      "type": "single",
+      "title": "大華公司本年度服務收入 NT$75,000、租金收入 NT$25,000，各項費用合計 NT$63,800。本期淨利為多少？",
+      "choices": [
+        {
+          "id": "d",
+          "text": "NT$11,200"
+        },
+        {
+          "id": "a",
+          "text": "NT$36,200"
+        },
+        {
+          "id": "b",
+          "text": "NT$100,000"
+        },
+        {
+          "id": "c",
+          "text": "NT$63,800"
+        }
+      ],
+      "answer": "a",
+      "explanation": "收入合計＝NT$75,000＋NT$25,000＝NT$100,000；淨利＝NT$100,000－NT$63,800＝NT$36,200。",
+      "originalEnglish": "Find net income from service revenue, rental revenue and total expenses."
     }
   ]
 }
