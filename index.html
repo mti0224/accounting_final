@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#121a36">
+  <meta name="description" content="會計學期末模擬考與互動練習：單選、多選、拖曳、篩選與圖片題型。">
+  <title>會計學期末｜互動模擬考系統</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home"><span class="brand-mark">A<span>+</span></span><span>Accounting<span class="brand-sub">Final Practice</span></span></a>
+      <div class="side-label">學習選單</div>
+      <nav class="side-nav" aria-label="主要導覽">
+        <button type="button" data-route="home" class="active"><span>◫</span> 學習總覽</button>
+        <button type="button" data-route="practice"><span>✎</span> 自由練習</button>
+        <button type="button" data-route="exam"><span>◷</span> 模擬考試</button>
+        <button type="button" data-route="history"><span>▤</span> 成績紀錄</button>
+        <button type="button" data-route="admin" id="adminNav" hidden><span>⚙</span> 管理後台</button>
+      </nav>
+      <div class="side-bottom"><span class="dot"></span><span id="sideMode">離線示範模式</span><small>1000 分滿分・700 分及格</small></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar">
+        <button id="menuToggle" class="icon-button mobile-only" aria-label="開啟選單">☰</button>
+        <div class="crumb">課程專區 <span>/</span> <strong id="breadcrumb">學習總覽</strong></div>
+        <div class="top-actions">
+          <span class="mode-pill" id="modePill">示範模式</span>
+          <button id="accountBtn" class="account-btn" type="button">登入 / 註冊</button>
+          <button id="logoutBtn" class="quiet-btn" hidden>登出</button>
+        </div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="footer">Accounting Final · 期末互動練習系統 <span>學習使用，非正式考試</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="authDialog" class="auth-dialog">
+    <form method="dialog" class="dialog-close"><button aria-label="關閉">×</button></form>
+    <div id="authBody"></div>
+  </dialog>
+  <script src="./config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>
