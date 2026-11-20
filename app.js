@@ -16,7 +16,7 @@
   function setRoute(route) { if(["practice","exam","history"].includes(route)&&!requireUser())return; if(route==="admin"&&!isAdmin()){notice("只有管理員可以使用此功能");return;} data.route=route; document.querySelectorAll("[data-route]").forEach(b=>b.classList.toggle("active",b.dataset.route===route)); byId("sidebar").classList.remove("open"); render(); if(route==="admin")loadAdmin().catch(e=>notice(e.message)); window.scrollTo(0,0); }
   function setHeader(title) { byId("breadcrumb").textContent=title; byId("adminNav").hidden=!isAdmin(); byId("accountBtn").textContent=data.user?data.user.name:"登入 / 註冊"; byId("logoutBtn").hidden=!data.user; byId("modePill").textContent=data.cloud?"雲端同步":"示範模式"; byId("sideMode").textContent=data.cloud?"Supabase 雲端模式":"離線示範模式"; }
   const demoWarning = () => demoMode()?'<div class="demo-banner"><strong>目前為瀏覽器示範模式。</strong> 使用者、核准狀態及成績僅存於此裝置；不會跨裝置同步，也不適合儲存真實個資。設定 Supabase 後可啟用正式帳號管理。</div>':"";
-  const bankWarning = () => data.custom.length?'<div class="demo-banner">目前載入由管理員在此瀏覽器匯入的題庫；匯入檔案不會自動同步到其他裝置，正式版請更新 GitHub 上的 questions.json。</div>':'<div class="demo-banner"><strong>目前使用 10 題原創示範題。</strong>尚未取得作業指定的 PDF 與 MD 真題，因此圖片、篩選、拖曳題型僅用來展示操作，不能視為與原試題一致。</div>';
+  const bankWarning = () => data.custom.length?'<div class="demo-banner">目前載入由管理員在此瀏覽器匯入的題庫；匯入檔案不會自動同步到其他裝置，正式版請更新 GitHub 上的 questions.json。</div>':'<div class="demo-banner"><strong>目前使用 100 題原創練習題。</strong>其中含 60 題單選。題目依照你提供的期中考題型和會計主題自行編寫，並非老師原題；英文文字是練習用對照版本。</div>';
   async function digest(password,salt) { const bytes=new TextEncoder().encode(salt+"|"+password); const output=await crypto.subtle.digest("SHA-256",bytes); return Array.from(new Uint8Array(output)).map(b=>b.toString(16).padStart(2,"0")).join(""); }
   function randomSalt() { const a=new Uint8Array(16); crypto.getRandomValues(a); return Array.from(a).map(x=>x.toString(16).padStart(2,"0")).join(""); }
   async function seedDemo() {
@@ -134,7 +134,9 @@
   function start(kind){
     if(!requireUser())return;
     if(!data.bank.length){notice("題庫目前是空的");return;}
-    data.attempt={kind,questions:data.bank.slice(),index:0,answers:{},reveals:{},startedAt:Date.now()};
+    const randomized=data.bank.slice();
+    for(let i=randomized.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[randomized[i],randomized[j]]=[randomized[j],randomized[i]];}
+    data.attempt={kind,questions:randomized,index:0,answers:{},reveals:{},startedAt:Date.now()};
     data.route=kind;render();window.scrollTo(0,0);
   }
   function currentAnswer(q){return data.attempt.answers[q.id];}
