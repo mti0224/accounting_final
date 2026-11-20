@@ -52,7 +52,7 @@
   async function loadResults() {
     if(!data.user)return;
     if(data.cloud){
-      const {data:rows,error}=await data.db.from("results").select("id,user_id,score,passed,answered,total,details,created_at").order("created_at",{ascending:false});
+      const {data:rows,error}=await data.db.from("results").select("id,user_id,mode,score,passed,answered,total,details,created_at").order("created_at",{ascending:false});
       if(error)notice("無法載入成績："+error.message);
       else data.results=rows||[];
     }else data.results=read("ac_final_results",[]);
@@ -201,19 +201,19 @@
       '<h2 class="question-title">'+html(q.title)+'</h2>'+(q.intro?'<p class="question-intro">'+html(q.intro)+'</p>':"")+
       questionBody(q,currentAnswer(q))+
       (isPractice&&a.reveals[q.id]?feedback(q,currentAnswer(q)):"")+
-      '<div class="question-footer"><div class="button-group"><button class="secondary-btn" data-action="prev" '+(!a.index?"disabled":"")+'>← 上一題</button><button class="secondary-btn" data-action="next" '+(a.index===n-1?"disabled":"")+'>下一題 →</button></div><div class="button-group">'+(isPractice?'<button class="primary-btn" data-action="reveal">觀看答案與解析</button>':'<button class="primary-btn" data-action="submitExam">交卷計分</button>')+'</div></div></div>'+
+      '<div class="question-footer"><div class="button-group"><button class="secondary-btn" data-action="prev" '+(!a.index?"disabled":"")+'>← 上一題</button><button class="secondary-btn" data-action="next" '+(a.index===n-1?"disabled":"")+'>下一題 →</button></div><div class="button-group">'+(isPractice?'<button class="secondary-btn" data-action="reveal">觀看答案與解析</button><button class="primary-btn" data-action="submitPractice">完成並記錄分數</button>':'<button class="primary-btn" data-action="submitExam">交卷計分</button>')+'</div></div></div>'+
       '<aside class="panel question-side"><h3>'+(isPractice?"練習進度":"考試進度")+'</h3><div class="row"><span class="muted">已作答</span><strong>'+answered+' / '+n+'</strong></div><div class="progress" style="margin-top:13px"><span style="width:'+(answered/n*100)+'%"></span></div><div class="question-dots">'+a.questions.map((item,i)=>'<button class="'+(i===a.index?"active ":"")+(isAnswered(item)?"answered":"")+'" data-go="'+i+'" aria-label="前往第 '+(i+1)+' 題">'+(i+1)+'</button>').join("")+'</div><p class="aside-note">方格可直接跳題。綠色代表已操作；尚未作答的題目在交卷時視為錯誤。</p>'+(isPractice?'<button class="secondary-btn" data-action="startPractice" style="width:100%">重新開始</button>':'<p class="small muted">經過時間：<strong id="timer">'+elapsed(a.startedAt)+'</strong></p>')+'</aside></div>';
   }
   function elapsed(start){const sec=Math.floor((Date.now()-start)/1000);return String(Math.floor(sec/60)).padStart(2,"0")+":"+String(sec%60).padStart(2,"0");}
   async function finishExam(){
-    const a=data.attempt;if(!a||a.kind!=="exam")return;
+    const a=data.attempt;if(!a)return;
     const unanswered=a.questions.filter(q=>!isAnswered(q)).length;
-    if(!window.confirm("確定交卷？"+(unanswered?"尚有 "+unanswered+" 題未作答。":"")+"交卷後將計算成績。"))return;
+    if(!window.confirm((a.kind==="practice"?"確定完成本次練習？":"確定交卷？")+(unanswered?"尚有 "+unanswered+" 題未作答。":"")+"交卷後將計算成績。"))return;
     const correct=a.questions.filter(q=>score(q,a.answers[q.id])).length;
     const mark=Math.round(correct/a.questions.length*1000);
-    const record={id:"local-"+Date.now(),user_id:data.user.id,score:mark,passed:mark>=700,answered:a.questions.length-unanswered,total:a.questions.length,created_at:new Date().toISOString(),details:a.questions.map(q=>({questionId:q.id,title:q.title,originalEnglish:q.originalEnglish||"",right:score(q,a.answers[q.id]),userAnswer:formatAnswer(q,a.answers[q.id]),correctAnswer:formatAnswer(q,q.answer),explanation:q.explanation||""}))};
+    const record={id:"local-"+Date.now(),mode:a.kind,user_id:data.user.id,score:mark,passed:mark>=700,answered:a.questions.length-unanswered,total:a.questions.length,created_at:new Date().toISOString(),details:a.questions.map(q=>({questionId:q.id,title:q.title,originalEnglish:q.originalEnglish||"",right:score(q,a.answers[q.id]),userAnswer:formatAnswer(q,a.answers[q.id]),correctAnswer:formatAnswer(q,q.answer),explanation:q.explanation||""}))};
     if(data.cloud){
-      const {data:rows,error}=await data.db.from("results").insert({user_id:record.user_id,score:record.score,passed:record.passed,answered:record.answered,total:record.total,details:record.details}).select().single();
+      const {data:rows,error}=await data.db.from("results").insert({user_id:record.user_id,mode:record.mode,score:record.score,passed:record.passed,answered:record.answered,total:record.total,details:record.details}).select().single();
       if(error){notice("雲端成績儲存失敗："+error.message);return;}
       record.id=rows.id;
       await loadResults();
@@ -223,7 +223,7 @@
   function resultPage(){
     const record=data.reviewResult||data.lastResult;
     if(!record)return '<div class="panel">尚無測驗結果</div>';
-    return '<div class="eyebrow">EXAM RESULT</div><h1 class="page-title">成績與逐題詳解</h1>'+
+    return '<div class="eyebrow">'+(record.mode==="practice"?"PRACTICE RESULT":"EXAM RESULT")+'</div><h1 class="page-title">成績與逐題詳解</h1>'+
       '<section class="panel result-hero"><div class="result-emoji">'+(record.passed?"🏆":"📖")+'</div><h2>'+(record.passed?"恭喜，達到及格標準！":"繼續努力，下一次會更好！")+'</h2><div class="result-score">'+record.score+'<small> / 1000</small></div><p class="muted">及格門檻 700 分・'+html(new Date(record.created_at).toLocaleString("zh-TW"))+'</p><div class="button-group" style="justify-content:center"><button class="primary-btn" data-action="startExam">再考一次</button><button class="secondary-btn" data-action="history">返回紀錄</button></div></section>'+
       '<div class="section-header"><h2>完整作答解析</h2><span class="muted small">'+(record.details||[]).filter(x=>x.right).length+' 題正確 / '+record.total+' 題</span></div>'+
       '<div class="review-list">'+(record.details||[]).map((d,i)=>'<article class="review-item"><div class="row"><span class="pill '+(d.right?"green":"red")+'">'+(d.right?"✓ 正確":"✕ 錯誤")+'</span><span class="muted small">第 '+(i+1)+' 題</span></div><h4>'+html(d.title)+'</h4><p><strong>你的作答：</strong>'+html(d.userAnswer)+'</p><p class="answers"><strong>正確答案：</strong>'+html(d.correctAnswer)+'</p><p><strong>中文解析：</strong>'+html(d.explanation)+'</p>'+
@@ -231,14 +231,14 @@
   }
   function historyPage(){
     const mine=data.results.filter(r=>r.user_id===data.user?.id);
-    return '<div class="eyebrow">PERFORMANCE TRACKER</div><h1 class="page-title">我的成績紀錄</h1><p class="page-desc">查看每次模擬考成績與詳解。只有完整交卷的考試會計入。</p>'+
-      demoWarning()+'<div class="panel"><div class="table-scroll"><table class="data-table"><thead><tr><th>日期</th><th>分數</th><th>完成題數</th><th>狀態</th><th>詳解</th></tr></thead><tbody>'+
-      (mine.length?mine.map(r=>'<tr><td>'+html(new Date(r.created_at).toLocaleString("zh-TW"))+'</td><td><strong>'+r.score+' / 1000</strong></td><td>'+r.answered+" / "+r.total+'</td><td><span class="pill '+(r.passed?"green":"red")+'">'+(r.passed?"及格":"未及格")+'</span></td><td><button class="secondary-btn" data-review="'+html(r.id)+'">檢視</button></td></tr>').join(""):'<tr><td colspan="5" class="muted">目前沒有紀錄。完成一次模擬考後就會出現在這裡。</td></tr>')+'</tbody></table></div></div>';
+    return '<div class="eyebrow">PERFORMANCE TRACKER</div><h1 class="page-title">我的成績紀錄</h1><p class="page-desc">查看每次模擬考成績與詳解。每次按下「完成並記錄分數」的練習，與完整交卷的模擬考，都會計入。</p>'+
+      demoWarning()+'<div class="panel"><div class="table-scroll"><table class="data-table"><thead><tr><th>日期</th><th>類型</th><th>分數</th><th>完成題數</th><th>狀態</th><th>詳解</th></tr></thead><tbody>'+
+      (mine.length?mine.map(r=>'<tr><td>'+html(new Date(r.created_at).toLocaleString("zh-TW"))+'</td><td>'+(r.mode==="practice"?"自由練習":"模擬考試")+'</td><td><strong>'+r.score+' / 1000</strong></td><td>'+r.answered+" / "+r.total+'</td><td><span class="pill '+(r.passed?"green":"red")+'">'+(r.passed?"及格":"未及格")+'</span></td><td><button class="secondary-btn" data-review="'+html(r.id)+'">檢視</button></td></tr>').join(""):'<tr><td colspan="6" class="muted">目前沒有紀錄。完成一次自由練習或模擬考後就會出現在這裡。</td></tr>')+'</tbody></table></div></div>';
   }
   async function loadAdmin(){
     if(!isAdmin())return;
     if(data.cloud){
-      const [u,r]=await Promise.all([data.db.from("profiles").select("*").order("created_at",{ascending:false}),data.db.from("results").select("user_id,score,passed,created_at").order("created_at",{ascending:false}).limit(100)]);
+      const [u,r]=await Promise.all([data.db.from("profiles").select("*").order("created_at",{ascending:false}),data.db.from("results").select("user_id,mode,score,passed,created_at").order("created_at",{ascending:false}).limit(100)]);
       if(u.error)notice("讀取帳號資料失敗："+u.error.message);
       data.adminRows=u.data||[];
       if(!r.error)data.adminResults=r.data||[];
@@ -252,8 +252,8 @@
       '<section class="stats-grid">'+stat("👥","總帳號數",data.adminRows.length)+stat("⌛","待審核",pending)+stat("▤","已記錄測驗",(data.adminResults||[]).length)+stat("📚","題庫題數",data.bank.length)+'</section>'+
       '<div class="section-header"><h2>帳號申請與審核</h2></div><div class="panel table-scroll"><table class="data-table"><thead><tr><th>姓名 / Email</th><th>狀態</th><th>登入次數</th><th>操作</th></tr></thead><tbody>'+
       data.adminRows.map(u=>'<tr><td><strong>'+html(u.name)+'</strong><div class="muted small">'+html(u.email)+'</div></td><td><span class="pill '+(u.status==="approved"?"green":u.status==="pending"?"gray":"red")+'">'+({approved:"已核准",pending:"待審核",rejected:"已停用"}[u.status]||"未知")+(u.role==="admin"?" · 管理員":"")+'</span></td><td>'+Number(u.login_count||0)+'</td><td>'+((u.role==="admin")?"—":'<div class="button-group"><button class="secondary-btn" data-approve="'+html(u.id)+'" data-status="approved" '+(u.status==="approved"?"disabled":"")+'>核准</button><button class="danger-btn" data-approve="'+html(u.id)+'" data-status="rejected" '+(u.status==="rejected"?"disabled":"")+'>停用</button></div>')+'</td></tr>').join("")+'</tbody></table></div>'+
-      '<div class="section-header"><h2>近期測驗成績</h2></div><div class="panel table-scroll"><table class="data-table"><thead><tr><th>學員</th><th>成績</th><th>是否及格</th><th>日期</th></tr></thead><tbody>'+
-      ((data.adminResults||[]).length?(data.adminResults||[]).slice(0,30).map(r=>'<tr><td>'+html(data.adminRows.find(u=>u.id===r.user_id)?.name||r.user_id)+'</td><td>'+r.score+'</td><td>'+(r.passed?"及格":"未及格")+'</td><td>'+html(new Date(r.created_at).toLocaleString("zh-TW"))+'</td></tr>').join(""):'<tr><td colspan="4" class="muted">尚無紀錄</td></tr>')+'</tbody></table></div>'+
+      '<div class="section-header"><h2>近期測驗成績</h2></div><div class="panel table-scroll"><table class="data-table"><thead><tr><th>學員</th><th>類型</th><th>成績</th><th>是否及格</th><th>日期</th></tr></thead><tbody>'+
+      ((data.adminResults||[]).length?(data.adminResults||[]).slice(0,30).map(r=>'<tr><td>'+html(data.adminRows.find(u=>u.id===r.user_id)?.name||r.user_id)+'</td><td>'+(r.mode==="practice"?"自由練習":"模擬考試")+'</td><td>'+r.score+'</td><td>'+(r.passed?"及格":"未及格")+'</td><td>'+html(new Date(r.created_at).toLocaleString("zh-TW"))+'</td></tr>').join(""):'<tr><td colspan="5" class="muted">尚無紀錄</td></tr>')+'</tbody></table></div>'+
       '<div class="section-header"><h2>管理題庫</h2></div><div class="panel"><p class="muted">可匯入符合 README 格式的 JSON 題庫，系統會以正規化題目文字排除重複。匯入後會<strong>取代示範題庫</strong>，但僅儲存在本瀏覽器。若要讓所有學生看到正式題庫，需把 JSON 提交到 GitHub 專案的 questions.json。</p><input id="bankInput" type="file" accept=".json,application/json" hidden><div class="button-group"><button class="primary-btn" data-action="importBank">匯入 JSON 題庫</button><button class="secondary-btn" data-action="exportBank">匯出目前題庫</button><button class="secondary-btn" data-action="restoreBank">清除自訂題庫</button></div><p class="small muted">PDF / MD 需先依原有文字、圖片與互動規則整理為 JSON；目前尚無自動解析 PDF 的功能。</p></div>'+
       '<div class="section-header"><h2>帳號安全</h2></div><form class="panel" id="passwordForm"><p class="muted">請將管理員密碼改為獨特且足夠強的密碼。正式模式管理員請在 Supabase Auth 建立，不會把初始密碼寫進公開網站。</p><div class="input-group"><label for="newPassword">新密碼（至少 8 碼）</label><input id="newPassword" type="password" minlength="8" required autocomplete="new-password"></div><button class="primary-btn" type="submit">更新我的密碼</button></form>';
   }
@@ -323,7 +323,7 @@
         if(action==="history"){setRoute("history");return;}
         if(action==="prev"||action==="next"){if(data.attempt){data.attempt.index=Math.max(0,Math.min(data.attempt.questions.length-1,data.attempt.index+(action==="next"?1:-1)));render();}return;}
         if(action==="reveal"){const q=data.attempt.questions[data.attempt.index];data.attempt.reveals[q.id]=true;render();return;}
-        if(action==="submitExam"){await finishExam();return;}
+        if(action==="submitExam"||action==="submitPractice"){await finishExam();return;}
         if(action==="toggleOriginal"){data.showOriginal[b.dataset.qid]=!data.showOriginal[b.dataset.qid];render();return;}
         if(action==="importBank"){byId("bankInput")?.click();return;}
         if(action==="exportBank"){exportBank();return;}
