@@ -360,7 +360,7 @@
       if(sel){const value=Object.assign({},currentAnswer(q)||{});if(sel.value)value[sel.dataset.matchId]=sel.value;else delete value[sel.dataset.matchId];setAnswer(q,value);}
     });
     let dragSource=null;
-    document.addEventListener("dragstart",e=>{const item=e.target.closest("[data-drag-index]");if(item){dragSource=Number(item.dataset.dragIndex);e.dataTransfer.effectAllowed="move";}});
+    document.addEventListener("dragstart",e=>{const item=e.target.closest("[data-drag-index]");if(item){dragSource=Number(item.dataset.dragIndex);e.dataTransfer.effectAllowed="move";e.dataTransfer.setData("text/plain",String(dragSource));}});
     document.addEventListener("dragover",e=>{if(dragSource!==null&&e.target.closest("[data-drag-index]"))e.preventDefault();});
     document.addEventListener("drop",e=>{const item=e.target.closest("[data-drag-index]");if(item&&dragSource!==null&&data.attempt){e.preventDefault();const idx=Number(item.dataset.dragIndex),q=data.attempt.questions[data.attempt.index],curr=currentAnswer(q),order=Array.isArray(curr)?curr.slice():q.items.map(x=>x.id);const moved=order.splice(dragSource,1)[0];order.splice(idx,0,moved);dragSource=null;setAnswer(q,order);}});
     document.addEventListener("dragend",()=>dragSource=null);
