@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "kind": "demonstration",
+  "title": "會計學互動示範題庫（非原始PDF/MD題目）",
+  "questions": [
+    {
+      "id": "demo-a01",
+      "type": "single",
+      "title": "會計恆等式中，正確的關係為何？",
+      "intro": "請選出唯一正確的答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "資產 = 負債 + 權益"
+        },
+        {
+          "id": "b",
+          "text": "資產 = 負債 − 權益"
+        },
+        {
+          "id": "c",
+          "text": "負債 = 資產 + 權益"
+        },
+        {
+          "id": "d",
+          "text": "權益 = 負債 − 資產"
+        }
+      ],
+      "answer": "a",
+      "explanation": "會計恆等式為「資產＝負債＋權益」，意指企業資產的來源來自債權人與業主。",
+      "originalEnglish": "Which equation correctly represents the fundamental accounting equation?"
+    },
+    {
+      "id": "demo-a02",
+      "type": "image",
+      "title": "請直接點擊 T 字帳中「借方（Debit）」的位置。",
+      "intro": "這是圖片點選題：請在下圖實際點擊對應區域，不是選擇題。",
+      "image": "./assets/t-account.svg",
+      "hotspots": [
+        {
+          "id": "debit",
+          "label": "借方",
+          "x1": 0,
+          "y1": 24,
+          "x2": 50,
+          "y2": 100
+        },
+        {
+          "id": "credit",
+          "label": "貸方",
+          "x1": 50,
+          "y1": 24,
+          "x2": 100,
+          "y2": 100
+        }
+      ],
+      "answer": "debit",
+      "explanation": "T 字帳的左側為借方（Debit），右側為貸方（Credit）。借貸是記帳方向，不直接等於增加或減少。",
+      "originalEnglish": "Click the DEBIT side of the T-account."
+    },
+    {
+      "id": "demo-a03",
+      "type": "filter",
+      "title": "請在資料表中篩選出所有「流動資產」。",
+      "intro": "可點選資料列進行多選，符合條件的資料列應全部選取。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "會計項目"
+        },
+        {
+          "key": "category",
+          "label": "性質"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "現金",
+          "category": "可立即使用的資金"
+        },
+        {
+          "id": "b",
+          "item": "應收帳款",
+          "category": "預計一年內收回"
+        },
+        {
+          "id": "c",
+          "item": "機器設備",
+          "category": "預計長期使用"
+        },
+        {
+          "id": "d",
+          "item": "預付三個月租金",
+          "category": "短期預付費用"
+        },
+        {
+          "id": "e",
+          "item": "長期投資",
+          "category": "預計持有超過一年"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "現金、應收帳款、短期預付費用通常列為流動資產。機器設備及長期投資不屬於流動資產。",
+      "originalEnglish": "Filter the table to select all current assets."
+    },
+    {
+      "id": "demo-a04",
+      "type": "order",
+      "title": "將會計記錄程序拖曳成正確的先後順序。",
+      "intro": "電腦可拖曳左側圖示，手機可使用 ↑／↓ 調整。",
+      "items": [
+        {
+          "id": "ledger",
+          "text": "過帳到分類帳"
+        },
+        {
+          "id": "source",
+          "text": "取得並分析原始憑證"
+        },
+        {
+          "id": "trial",
+          "text": "編製試算表"
+        },
+        {
+          "id": "journal",
+          "text": "登錄日記簿分錄"
+        }
+      ],
+      "answer": [
+        "source",
+        "journal",
+        "ledger",
+        "trial"
+      ],
+      "explanation": "通常先分析交易及憑證，記錄日記簿分錄，再過帳至分類帳，最後編製試算表檢查借貸平衡。",
+      "originalEnglish": "Drag the accounting recording steps into the correct order."
+    },
+    {
+      "id": "demo-a05",
+      "type": "match",
+      "title": "請配對各會計科目所屬的類別。",
+      "intro": "每列選取一個分類，請完成所有配對。",
+      "left": [
+        {
+          "id": "cash",
+          "text": "現金"
+        },
+        {
+          "id": "ap",
+          "text": "應付帳款"
+        },
+        {
+          "id": "capital",
+          "text": "業主資本"
+        },
+        {
+          "id": "sales",
+          "text": "銷貨收入"
+        }
+      ],
+      "right": [
+        {
+          "id": "asset",
+          "text": "資產"
+        },
+        {
+          "id": "liability",
+          "text": "負債"
+        },
+        {
+          "id": "equity",
+          "text": "權益"
+        },
+        {
+          "id": "revenue",
+          "text": "收入"
+        }
+      ],
+      "answer": {
+        "cash": "asset",
+        "ap": "liability",
+        "capital": "equity",
+        "sales": "revenue"
+      },
+      "explanation": "現金屬於資產；應付帳款是負債；業主資本是權益；銷貨收入屬於收入。",
+      "originalEnglish": "Match each account title to its account category."
+    },
+    {
+      "id": "demo-a06",
+      "type": "multiple",
+      "title": "關於權責發生基礎，哪些敘述正確？（複選）",
+      "intro": "可選取一個以上的答案。",
+      "choices": [
+        {
+          "id": "a",
+          "text": "收入在已賺得時認列，不一定等到收到現金。"
+        },
+        {
+          "id": "b",
+          "text": "所有費用只能在支付現金後認列。"
+        },
+        {
+          "id": "c",
+          "text": "費用依其發生期間認列。"
+        },
+        {
+          "id": "d",
+          "text": "權責發生基礎與現金基礎完全相同。"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "explanation": "權責發生基礎重視收入實現與費用發生的期間，即使現金尚未收付也須適時認列。",
+      "originalEnglish": "Which statements about accrual accounting are correct? Select all that apply."
+    },
+    {
+      "id": "demo-a07",
+      "type": "single",
+      "title": "公司以現金購買辦公設備 20,000 元，對會計恆等式的影響為何？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "總資產增加 20,000 元"
+        },
+        {
+          "id": "b",
+          "text": "總資產減少 20,000 元"
+        },
+        {
+          "id": "c",
+          "text": "總資產不變"
+        },
+        {
+          "id": "d",
+          "text": "負債增加 20,000 元"
+        }
+      ],
+      "answer": "c",
+      "explanation": "設備（資產）增加 20,000，現金（資產）同額減少，因此資產總額不變。",
+      "originalEnglish": "A company purchases equipment for cash. What is the effect on total assets?"
+    },
+    {
+      "id": "demo-a08",
+      "type": "filter",
+      "title": "請篩選出需要「調整分錄」的情況。",
+      "intro": "勾選表格中所有需要期末調整的資料列。",
+      "columns": [
+        {
+          "key": "item",
+          "label": "情況"
+        },
+        {
+          "key": "category",
+          "label": "期末狀態"
+        }
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "item": "預付租金部分已到期",
+          "category": "尚未轉列費用"
+        },
+        {
+          "id": "b",
+          "item": "本期應付薪資尚未入帳",
+          "category": "已發生未支付"
+        },
+        {
+          "id": "c",
+          "item": "收到現金並立即完成服務",
+          "category": "已當期正確入帳"
+        },
+        {
+          "id": "d",
+          "item": "設備本期折舊尚未認列",
+          "category": "尚未提列折舊"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": "預付費用到期、應計費用及折舊均為常見期末調整事項；已正確入帳的即時交易不需重複調整。",
+      "originalEnglish": "Filter all cases requiring an adjusting journal entry."
+    },
+    {
+      "id": "demo-a09",
+      "type": "single",
+      "title": "期初應收帳款 15,000 元，本期賒銷 30,000 元，本期收回帳款 20,000 元。期末應收帳款為多少？",
+      "choices": [
+        {
+          "id": "a",
+          "text": "5,000 元"
+        },
+        {
+          "id": "b",
+          "text": "25,000 元"
+        },
+        {
+          "id": "c",
+          "text": "35,000 元"
+        },
+        {
+          "id": "d",
+          "text": "65,000 元"
+        }
+      ],
+      "answer": "b",
+      "explanation": "期末應收帳款＝期初 15,000＋本期賒銷 30,000－本期收款 20,000＝25,000 元。",
+      "originalEnglish": "Beginning receivables are 15,000, credit sales 30,000 and collections 20,000. Find ending receivables."
+    },
+    {
+      "id": "demo-a10",
+      "type": "order",
+      "title": "請將下列數字依財務報表編製流程排序。",
+      "intro": "本題考核報表間的承接關係。",
+      "items": [
+        {
+          "id": "balance",
+          "text": "將期末權益帶入資產負債表"
+        },
+        {
+          "id": "net",
+          "text": "計算本期淨利"
+        },
+        {
+          "id": "equity",
+          "text": "計算期末權益"
+        },
+        {
+          "id": "revenue",
+          "text": "彙總本期收入與費用"
+        }
+      ],
+      "answer": [
+        "revenue",
+        "net",
+        "equity",
+        "balance"
+      ],
+      "explanation": "先彙總收入費用算出淨利，再依淨利與業主變動求期末權益，最後帶入資產負債表。",
+      "originalEnglish": "Arrange the financial statement preparation steps in a logical sequence."
+    }
+  ]
+}
